@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
 import { getConfiguration, getMovies } from "../../../../Services/data/Data";
+import { useEffect, useState } from "react";
+
 import Item from "../../Item/Item";
 function Movies() {
   const [movies, setMovies] = useState([]);

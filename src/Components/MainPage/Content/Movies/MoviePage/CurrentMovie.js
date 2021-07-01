@@ -21,11 +21,9 @@ function CurrentMovie() {
     getVideosMovie(params).then((res) => setDataVideo(res));
     getLinkMovie(params).then((res) => setLinkMovie(res));
     getConfiguration().then((res) => setDataImage(res));
-    getSimilarMovie(params).then((res) => setSimilarMovie(res));
-
+      getSimilarMovie(params).then((res) => setSimilarMovie(res));
       window.scrollTo(0, 0);
   }, [params]);
-
   return (
     <div className="itemInfo">
       <ShowCurrentMovie

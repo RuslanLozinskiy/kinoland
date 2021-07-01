@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+
 import Item from "../../../Item/Item";
 
 function SimilarItems(props) {
@@ -21,7 +22,7 @@ function SimilarItems(props) {
       setTogL(false);
     }
   };
-    
+
   const nextHandler = () => {
     setPosition((position -= 100));
 

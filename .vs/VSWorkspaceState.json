@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\Components",
+    "\\src\\Components\\MainPage",
+    "\\src\\Components\\MainPage\\Content",
+    "\\src\\Components\\MainPage\\Content\\Movies",
+    "\\src\\Components\\MainPage\\Content\\ShowCurrentMovies",
+    "\\src\\Components\\MainPage\\Content\\ShowCurrentMovies\\trailer",
+    "\\src\\Services",
+    "\\src\\Services\\data"
+  ],
+  "SelectedNode": "\\src\\Services\\data\\Data.js",
+  "PreviewInSolutionExplorer": false
+}

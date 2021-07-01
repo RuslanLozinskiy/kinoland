@@ -10,7 +10,7 @@ function Trailer(props) {
           src={`https://www.youtube.com/embed/${video[0].key}`}
           loading="lazy"
           allowFullScreen
-        ></iframe>
+        />
       </div>
     );
   } else if (Object.keys(linkOftrailer).length !== 0) {
@@ -18,7 +18,7 @@ function Trailer(props) {
   } else {
     return (
       <h2 className="trailer-nothave">
-        sorry but at the moment we don't have trailer or link of trailer
+        sorry we don't have trailer or link of trailer at the moment
       </h2>
     );
   }
