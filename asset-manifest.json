@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/kinoland/static/css/main.c07c71ef.chunk.css",
-    "main.js": "/kinoland/static/js/main.213bb626.chunk.js",
-    "main.js.map": "/kinoland/static/js/main.213bb626.chunk.js.map",
+    "main.css": "/kinoland/static/css/main.21cb58f6.chunk.css",
+    "main.js": "/kinoland/static/js/main.cce11885.chunk.js",
+    "main.js.map": "/kinoland/static/js/main.cce11885.chunk.js.map",
     "runtime-main.js": "/kinoland/static/js/runtime-main.d3b3acaa.js",
     "runtime-main.js.map": "/kinoland/static/js/runtime-main.d3b3acaa.js.map",
     "static/js/2.4a7ae4e8.chunk.js": "/kinoland/static/js/2.4a7ae4e8.chunk.js",
     "static/js/2.4a7ae4e8.chunk.js.map": "/kinoland/static/js/2.4a7ae4e8.chunk.js.map",
     "index.html": "/kinoland/index.html",
-    "static/css/main.c07c71ef.chunk.css.map": "/kinoland/static/css/main.c07c71ef.chunk.css.map",
+    "static/css/main.21cb58f6.chunk.css.map": "/kinoland/static/css/main.21cb58f6.chunk.css.map",
     "static/js/2.4a7ae4e8.chunk.js.LICENSE.txt": "/kinoland/static/js/2.4a7ae4e8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d3b3acaa.js",
     "static/js/2.4a7ae4e8.chunk.js",
-    "static/css/main.c07c71ef.chunk.css",
-    "static/js/main.213bb626.chunk.js"
+    "static/css/main.21cb58f6.chunk.css",
+    "static/js/main.cce11885.chunk.js"
   ]
 }
