@@ -7,7 +7,7 @@ function BtnSerials() {
       <button
         className="header-button"
         onClick={() => {
-            history.push("/kinoland/serials");
+          history.push("/kinoland/serials");
         }}
       >
         TV
@@ -16,7 +16,7 @@ function BtnSerials() {
         <button
           className="dropdown-button"
           onClick={() => {
-              history.push("/kinoland/serials/ontheair");
+            history.push("/kinoland/serials/ontheair");
           }}
         >
           NOW PLAYING
@@ -24,7 +24,7 @@ function BtnSerials() {
         <button
           className="dropdown-button"
           onClick={() => {
-              history.push("/kinoland/serials/toprated");
+            history.push("/kinoland/serials/toprated");
           }}
         >
           TOP RATED

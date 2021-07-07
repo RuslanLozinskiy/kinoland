@@ -3,12 +3,19 @@ body {
 }
 
 .movies {
-  display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-top: 2%;
 }
+
+.movies,
 .movies-card {
+  display: -webkit-flex;
   display: flex;
+}
+
+.movies-card {
+  -webkit-flex-direction: column;
   flex-direction: column;
   width: 250px;
   height: 350px;
@@ -20,29 +27,34 @@ body {
   text-align: center;
   transition: 0.3s ease-in;
 }
+
 .movies-card:hover {
   border-bottom: 2px solid #fc5a5a;
   opacity: 0.7;
 }
+
 .movies-info {
+  -webkit-flex: 1 0 auto;
   flex: 1 0 auto;
   height: 15%;
 }
+
 .movies-info h4 {
-  margin: 5% 0 10px 0;
-  color: #444444;
+  margin: 5% 0 10px;
+  color: #444;
   font-weight: 400;
 }
 
 .details {
-  border: 2px solid #808080;
+  border: 2px solid grey;
   border-radius: 8px;
   background-color: transparent;
-  color: #808080;
+  color: grey;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 }
+
 .details:hover {
   background-color: #d3d3d3;
 }
@@ -53,45 +65,52 @@ body {
   height: 100%;
   border-radius: 8px;
 }
+
 .movies-image {
   display: block;
   width: 100%;
   height: 75%;
 }
+
 .trailer-nothave {
   position: absolute;
   top: 120%;
   margin: 0 auto;
   width: 70%;
 }
+
 .header {
+  display: -webkit-flex;
   display: flex;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 30px;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   z-index: 1;
 }
+
 .dropdown-movies {
   top: 0;
 }
+
 #search-header {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 100;
 }
+
 .itemInfo {
   width: 70%;
   height: 1700px;
   margin: 0 auto;
-  background-color: white;
+  background-color: #fff;
 }
 
 .header-button {
-  color: black;
+  color: #000;
   font-size: 120%;
   width: 100px;
   text-decoration: none;
@@ -115,6 +134,7 @@ body {
   padding-left: 3%;
   font-size: 150%;
 }
+
 .showItem-info {
   position: absolute;
   top: 70%;
@@ -122,15 +142,18 @@ body {
   height: 40%;
   padding-left: 2%;
 }
+
 .showItem-info p {
   font-size: 150%;
 }
+
 #search-header input {
   height: 27px;
   border: 0;
   outline: none;
   font-size: 120%;
 }
+
 #search-header button {
   height: 28px;
   border: none;
@@ -139,17 +162,21 @@ body {
   color: #8b8b8b;
   text-decoration: none;
 }
+
 #search-header button:hover {
-  background-color: gainsboro;
+  background-color: #dcdcdc;
 }
+
 .header button {
   height: 30px;
   border: none;
   cursor: pointer;
 }
+
 .header button:hover {
-  background-color: gainsboro;
+  background-color: #dcdcdc;
 }
+
 .dropdown-movies {
   display: inline-block;
 }
@@ -158,13 +185,13 @@ body {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content button {
   display: block;
-  color: black;
+  color: #000;
   text-decoration: none;
   cursor: pointer;
 }
@@ -172,13 +199,16 @@ body {
 .dropdown-movies:hover .dropdown-content {
   display: block;
 }
+
 .dropdown-button {
   text-align: center;
   width: 100px;
 }
+
 .dropdown-button:hover {
-  background-color: gainsboro;
+  background-color: #dcdcdc;
 }
+
 #showItem-trailer {
   margin: 0 auto;
   width: 70%;
@@ -186,6 +216,7 @@ body {
   position: absolute;
   top: 120%;
 }
+
 #showItem-trailer iframe {
   width: 98.5%;
   height: 60%;
@@ -198,24 +229,35 @@ body {
   top: 120%;
   font-size: 120%;
 }
+
 .slider-similar-items {
   position: absolute;
   width: 56.1%;
   height: 100%;
   top: 190%;
+  display: -webkit-flex;
   display: flex;
   overflow: hidden;
   left: 21%;
 }
+
 #text-similar-items {
   position: absolute;
   left: 42%;
   top: 180%;
 }
+
 .slider-similar-items .movies-card {
   min-width: 250px;
   padding: 1px;
 }
+
+.btn-slider-prev {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 10%;
+}
+.btn-slider-next,
 .btn-slider-prev {
   position: absolute;
   border: 1px solid #f5f5f5;
@@ -224,21 +266,12 @@ body {
   height: 50px;
   line-height: 0;
   font-size: 0;
-  transform: rotate(45deg);
   cursor: pointer;
   top: 210%;
-  left: 10%;
 }
+
 .btn-slider-next {
-  position: absolute;
-  border: 1px solid #f5f5f5;
-  border-width: 0 0 2px 2px;
-  width: 50px;
-  height: 50px;
-  line-height: 0;
-  font-size: 0;
-  top: 210%;
   right: 10%;
+  -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
-  cursor: pointer;
 }

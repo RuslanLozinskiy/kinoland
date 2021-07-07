@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-import { getConfiguration, getSerials } from "../../../../Services/data/Data";
+
 import Item from "../../Item/Item";
+import { getConfiguration } from "../../../../store/data/dataConfg";
+import { getSerials } from "../../../../store/data/dataOfSerial";
 
 function Serials() {
   const [serials, setSerials] = useState([]);

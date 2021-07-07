@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import {
-  getConfiguration,
-  getTopRatedSerials,
-} from "../../../../../Services/data/Data";
+
 import Item from "../../../Item/Item";
+import { getConfiguration } from "../../../../../store/data/dataConfg";
+import { getTopRatedSerials } from "../../../../../store/data/dataOfSerial";
 
 function TopRatedSerials(props) {
   const [topRated, setTopRated] = useState([]);

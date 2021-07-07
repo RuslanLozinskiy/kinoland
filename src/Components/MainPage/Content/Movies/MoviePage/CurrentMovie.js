@@ -1,13 +1,14 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import {
-  getConfiguration,
   getCurrentMovie,
   getLinkMovie,
   getSimilarMovie,
   getVideosMovie,
-} from "../../../../../Services/data/Data";
+} from "./../../../../../store/data/dataOfMovie";
+import { useEffect, useState } from "react";
+
 import ShowCurrentMovie from "../../ShowCurrentMovies/ShowCurrentMovie";
+import { getConfiguration } from "../../../../../store/data/dataConfg";
+import { useParams } from "react-router-dom";
 
 function CurrentMovie() {
   let params = useParams();
@@ -21,8 +22,8 @@ function CurrentMovie() {
     getVideosMovie(params).then((res) => setDataVideo(res));
     getLinkMovie(params).then((res) => setLinkMovie(res));
     getConfiguration().then((res) => setDataImage(res));
-      getSimilarMovie(params).then((res) => setSimilarMovie(res));
-      window.scrollTo(0, 0);
+    getSimilarMovie(params).then((res) => setSimilarMovie(res));
+    window.scrollTo(0, 0);
   }, [params]);
   return (
     <div className="itemInfo">

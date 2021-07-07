@@ -1,13 +1,14 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import {
-  getConfiguration,
   getCurrentSerial,
-  getVideosSerial,
   getLinkSerial,
   getSimilarSerial,
-} from "../../../../../Services/data/Data";
+  getVideosSerial,
+} from "../../../../../store/data/dataOfSerial";
+import { useEffect, useState } from "react";
+
 import ShowCurrentMovie from "../../ShowCurrentMovies/ShowCurrentMovie";
+import { getConfiguration } from "../../../../../store/data/dataConfg";
+import { useParams } from "react-router-dom";
 
 function CurrentSerial() {
   let params = useParams();

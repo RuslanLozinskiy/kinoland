@@ -6,7 +6,7 @@ function BtnMovies() {
       <button
         className="header-button"
         onClick={() => {
-            history.push("/kinoland/movies");
+          history.push("/kinoland/movies");
         }}
       >
         MOVIES
@@ -15,7 +15,7 @@ function BtnMovies() {
         <button
           className="dropdown-button"
           onClick={() => {
-              history.push("/kinoland/movies/nowplaying");
+            history.push("/kinoland/movies/nowplaying");
           }}
         >
           NOW PLAYING
@@ -23,7 +23,7 @@ function BtnMovies() {
         <button
           className="dropdown-button"
           onClick={() => {
-              history.push("/kinoland/movies/toprated");
+            history.push("/kinoland/movies/toprated");
           }}
         >
           TOP RATED

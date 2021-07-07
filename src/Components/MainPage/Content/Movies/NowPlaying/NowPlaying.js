@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import {
-  getConfiguration,
-  getNowPlayingMovies,
-} from "../../../../../Services/data/Data";
+
 import Item from "../../../Item/Item";
+import { getConfiguration } from "../../../../../store/data/dataConfg";
+import { getNowPlayingMovies } from "../../../../../store/data/dataOfMovie";
 
 function NowPlaying() {
   const [nowPlaying, setNowPlaying] = useState([]);

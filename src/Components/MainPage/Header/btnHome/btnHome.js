@@ -6,7 +6,7 @@ function BtnHome() {
     <button
       className="header-button"
       onClick={() => {
-          history.push("/kinoland/");
+        history.push("/kinoland/");
       }}
     >
       HOME

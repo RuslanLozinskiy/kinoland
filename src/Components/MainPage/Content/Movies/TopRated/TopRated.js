@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import {
-  getConfiguration,
-  getTopRatedMovies,
-} from "../../../../../Services/data/Data";
+
 import Item from "../../../Item/Item";
+import { getConfiguration } from "../../../../../store/data/dataConfg";
+import { getTopRatedMovies } from "./../../../../../store/data/dataOfMovie";
 
 function TopRated() {
   const [topRated, setTopRated] = useState([]);

@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import {
-  getConfiguration,
-  getOnTheAirSerials,
-} from "../../../../../Services/data/Data";
+
 import Item from "../../../Item/Item";
+import { getConfiguration } from "../../../../../store/data/dataConfg";
+import { getOnTheAirSerials } from "../../../../../store/data/dataOfSerial";
 
 function OnTheAir() {
   const [onTheAir, setOnTheAir] = useState([]);

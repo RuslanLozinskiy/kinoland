@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import {
-  foundMovie,
-  foundSerials,
-  getConfiguration,
-} from "../../../../Services/data/Data";
+
 import Item from "../../Item/Item";
+import { foundMovie } from "./../../../../store/data/dataOfMovie";
+import { foundSerials } from "../../../../store/data/dataOfSerial";
+import { getConfiguration } from "../../../../store/data/dataConfg";
+import { useParams } from "react-router-dom";
 
 function SearchMovies() {
   let params = useParams();

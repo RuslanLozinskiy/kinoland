@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import {
-  getAiringToday,
-  getConfiguration,
-  getUpComingMovies,
-} from "../../../../Services/data/Data";
+
 import Item from "../../Item/Item";
+import { getAiringToday } from "./../../../../store/data/dataOfSerial";
+import { getConfiguration } from "../../../../store/data/dataConfg";
+import { getUpComingMovies } from "./../../../../store/data/dataOfMovie";
 
 function Home() {
   const [upComing, setUpComing] = useState([]);
