@@ -102,12 +102,12 @@ body {
   z-index: 100;
 }
 
-.itemInfo {
+/* .itemInfo {
   width: 70%;
   height: 1700px;
   margin: 0 auto;
   background-color: #fff;
-}
+} */
 
 .header-button {
   color: #000;
@@ -118,21 +118,17 @@ body {
 }
 
 .showItem-image img {
-  position: absolute;
-  top: 9%;
-  width: 30%;
-  height: 60%;
-  padding-left: 2%;
+ width: 100%;
+ height: 100%;
 }
 
 .showItem-overview {
+  width: 200%;
+  height: 100%;
   position: absolute;
-  top: 30px;
-  margin-left: 30%;
-  width: 35%;
-  height: 100px;
-  padding-left: 3%;
-  font-size: 150%;
+  top: 0%;
+  left:120%;
+  font-size: 120%;
 }
 
 .showItem-info {
@@ -274,4 +270,39 @@ body {
   right: 10%;
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+.header-currentPage-back_drop_image {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0.3;
+}
+.header-currentPage-back_drop_image img {
+  height: 100%;
+  width: 100%;
+}
+.header-currentPage {
+  width: 20%;
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  color: whitesmoke;
+}
+.btn-currentPage {
+  position: absolute;
+  top: 118%;
+  left: 20%;
+}
+.btn-currentPage button {
+  color: #000;
+  font-size: 120%;
+  width: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  height: 30px;
+  border: none;
+  
+}
+.btn-currentPage button:hover {
+  background-color: #dcdcdc;
 }

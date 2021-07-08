@@ -9,12 +9,10 @@ function InfoCurrentMovie(props) {
           ? data.release_date
           : data.first_air_date}
       </p>
-      <p>
-        <b>name:</b> {data.hasOwnProperty("title") ? data.title : data.name}
-      </p>
+
       {data.production_countries.length !== 0 ? (
         <p>
-          <b> country:</b>
+          <b> страна:</b>
           {data.production_countries[0].name}
         </p>
       ) : null}

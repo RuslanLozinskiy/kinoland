@@ -26,15 +26,13 @@ function CurrentMovie() {
     window.scrollTo(0, 0);
   }, [params]);
   return (
-    <div className="itemInfo">
-      <ShowCurrentMovie
-        similarItem={similarMovie}
-        data={dataMovie}
-        image={dataImage}
-        video={dataVideo}
-        link={linkMovie}
-      />
-    </div>
+    <ShowCurrentMovie
+      similarItem={similarMovie}
+      data={dataMovie}
+      image={dataImage}
+      video={dataVideo}
+      link={linkMovie}
+    />
   );
 }
 export default CurrentMovie;

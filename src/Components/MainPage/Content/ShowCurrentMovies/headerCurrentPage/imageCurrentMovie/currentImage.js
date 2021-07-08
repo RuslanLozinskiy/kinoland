@@ -4,7 +4,7 @@ function CurrentImage(props) {
     <div className="showItem-image">
       <img
         alt=""
-        src={image.base_url + image.poster_sizes[4] + data.poster_path}
+        src={image.base_url + image.poster_sizes[3] + data.poster_path}
       />
     </div>
   );

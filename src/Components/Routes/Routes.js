@@ -54,13 +54,13 @@ function Routes() {
             <TopRated />
           </Layout>
         </Route>
-        <Route exact path="/kinoland/movies/:movieId">
+        <Route exact path="/kinoland/movies/:movieId/details">
           <Layout>
             <CurrentMovie />
           </Layout>
         </Route>
 
-        <Route exact path="/kinoland/serial/:movieId">
+        <Route exact path="/kinoland/serial/:movieId/details">
           <Layout>
             <CurrentSerial />
           </Layout>

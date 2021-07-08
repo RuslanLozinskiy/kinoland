@@ -2,9 +2,8 @@ function OverviewCurrentMovies(props) {
   const { data } = props;
   return (
     <div className="showItem-overview">
-      <p>
-        <b>overview:</b> {data.overview}
-      </p>
+      <h1>{data.hasOwnProperty("title") ? data.title : data.name}</h1>
+      <p>{data.overview}</p>
     </div>
   );
 }
