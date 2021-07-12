@@ -1,39 +1,16 @@
+import { useEffect, useState } from "react";
+
+import ShowInfoCurrentPage from "./showInfoCurrentPage/showInfoCurrentPage";
+import { getCurrentMovie } from "../../../../../store/data/dataOfMovie";
+import { useParams } from "react-router-dom";
+
 function InfoCurrentMovie(props) {
-  const { data } = props;
-
-  return (
-    <div className="showItem-info">
-      <p>
-        <b>data of release:</b>{" "}
-        {data.hasOwnProperty("release_date")
-          ? data.release_date
-          : data.first_air_date}
-      </p>
-
-      {data.production_countries.length !== 0 ? (
-        <p>
-          <b> страна:</b>
-          {data.production_countries[0].name}
-        </p>
-      ) : null}
-
-      {data.hasOwnProperty("budget") ? (
-        <p>
-          <b>budget:</b> {data.budget} $
-        </p>
-      ) : (
-        ""
-      )}
-      {data.genres.length !== 0 ? (
-        <p>
-          <b>genre:</b> {data.genres[0].name}
-        </p>
-      ) : null}
-
-      <p>
-        <b>language:</b> {data.original_language}
-      </p>
-    </div>
-  );
+  const params = useParams();
+  const [info, setInfo] = useState([]);
+  useEffect(() => {
+    getCurrentMovie(params).then((res) => setInfo(res));
+  }, [params]);
+  console.log(info);
+  return <ShowInfoCurrentPage data={info} />;
 }
 export default InfoCurrentMovie;

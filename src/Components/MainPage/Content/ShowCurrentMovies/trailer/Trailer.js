@@ -1,26 +1,17 @@
-import LinkOfTrailer from "./linkOfTrailer";
-function Trailer(props) {
-  const { video, linkOftrailer } = props;
+import { useEffect, useState } from "react";
 
-  if (video.length !== 0) {
-    return (
-      <div id="showItem-trailer">
-        <iframe
-          title="trailer"
-          src={`https://www.youtube.com/embed/${video[0].key}`}
-          loading="lazy"
-          allowFullScreen
-        />
-      </div>
-    );
-  } else if (Object.keys(linkOftrailer).length !== 0) {
-    return <LinkOfTrailer link={linkOftrailer} />;
-  } else {
-    return (
-      <h2 className="trailer-nothave">
-        sorry we don't have trailer or link of trailer at the moment
-      </h2>
-    );
-  }
+import LinkOfTrailer from "./linkOfTrailer";
+import ShowTrailer from "./showTrailer";
+import { getVideosMovie } from "../../../../../store/data/dataOfMovie";
+import { useParams } from "react-router-dom";
+
+function Trailer(props) {
+  const [video, setVideo] = useState([]);
+  const params = useParams();
+  useEffect(() => {
+    getVideosMovie(params).then((res) => setVideo(res));
+  }, [params]);
+
+  return <ShowTrailer video={video} />;
 }
 export default Trailer;
