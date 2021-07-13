@@ -1,10 +1,10 @@
 import { Route, Router, Switch } from "react-router-dom";
 
-import CurrentMovie from "../MainPage/Content/Movies/MoviePage/CurrentMovie";
 import CurrentSerial from "../MainPage/Content/TV_serials/SerialPage/CurrentSerial";
 import Home from "../MainPage/Content/Home/Home";
 import InfoCurrentMovie from "../MainPage/Content/ShowCurrentMovies/infoCurrentMovie/infoCurrentMovie";
 import Layout from "./Layout";
+import LayoutCurrentMovie from "../MainPage/Content/Movies/LayoutMoviePage/LayoutCurrentMovie";
 import Movies from "../MainPage/Content/Movies/Movies";
 import NowPlaying from "../MainPage/Content/Movies/NowPlaying/NowPlaying";
 import OnTheAir from "../MainPage/Content/TV_serials/OnTheAir/OnTheAir";
@@ -58,16 +58,16 @@ function Routes() {
         </Route>
         <Route exact path="/kinoland/movies/:movieId/details">
           <Layout>
-            <CurrentMovie>
+            <LayoutCurrentMovie>
               <InfoCurrentMovie />
-            </CurrentMovie>
+            </LayoutCurrentMovie>
           </Layout>
         </Route>
         <Route exact path="/kinoland/movies/:movieId/videos">
           <Layout>
-            <CurrentMovie>
-              <Trailer/>
-            </CurrentMovie>
+            <LayoutCurrentMovie>
+              <Trailer />
+            </LayoutCurrentMovie>
           </Layout>
         </Route>
         <Route exact path="/kinoland/serial/:movieId/details">

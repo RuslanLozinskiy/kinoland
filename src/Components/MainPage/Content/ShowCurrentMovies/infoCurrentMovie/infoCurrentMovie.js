@@ -10,7 +10,6 @@ function InfoCurrentMovie(props) {
   useEffect(() => {
     getCurrentMovie(params).then((res) => setInfo(res));
   }, [params]);
-  console.log(info);
   return <ShowInfoCurrentPage data={info} />;
 }
 export default InfoCurrentMovie;

@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 function ShowdataCurrentPage(props) {
   const { data } = props;

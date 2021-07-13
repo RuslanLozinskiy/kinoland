@@ -1,6 +1,5 @@
 function ShowTrailer(props) {
   const { video } = props;
-  console.log(video);
   if (video.length !== 0) {
     return (
       <div id="showItem-trailer">

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-import LinkOfTrailer from "./linkOfTrailer";
 import ShowTrailer from "./showTrailer";
 import { getVideosMovie } from "../../../../../store/data/dataOfMovie";
 import { useParams } from "react-router-dom";
@@ -11,7 +10,6 @@ function Trailer(props) {
   useEffect(() => {
     getVideosMovie(params).then((res) => setVideo(res));
   }, [params]);
-
   return <ShowTrailer video={video} />;
 }
 export default Trailer;
