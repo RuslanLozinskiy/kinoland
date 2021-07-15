@@ -1,10 +1,9 @@
 import { Route, Router, Switch } from "react-router-dom";
 
+import CurrentMovie from "../MainPage/Content/Movies/MoviePage/CurrentMovie";
 import CurrentSerial from "../MainPage/Content/TV_serials/SerialPage/CurrentSerial";
 import Home from "../MainPage/Content/Home/Home";
-import InfoCurrentMovie from "../MainPage/Content/ShowCurrentMovies/infoCurrentMovie/infoCurrentMovie";
 import Layout from "./Layout";
-import LayoutCurrentMovie from "../MainPage/Content/Movies/LayoutMoviePage/LayoutCurrentMovie";
 import Movies from "../MainPage/Content/Movies/Movies";
 import NowPlaying from "../MainPage/Content/Movies/NowPlaying/NowPlaying";
 import OnTheAir from "../MainPage/Content/TV_serials/OnTheAir/OnTheAir";
@@ -12,7 +11,6 @@ import SearchMovies from "../MainPage/Content/SearchMovies/SearchMovies";
 import Serials from "../MainPage/Content/TV_serials/Serials";
 import TopRated from "../MainPage/Content/Movies/TopRated/TopRated";
 import TopRatedSerials from "../MainPage/Content/TV_serials/TopRated/TopRatedSerials";
-import Trailer from "../MainPage/Content/ShowCurrentMovies/trailer/Trailer";
 import { createBrowserHistory } from "history";
 
 function Routes() {
@@ -56,21 +54,13 @@ function Routes() {
             <TopRated />
           </Layout>
         </Route>
-        <Route exact path="/kinoland/movies/:movieId/details">
+        <Route exact path="/kinoland/movies/:movieId">
           <Layout>
-            <LayoutCurrentMovie>
-              <InfoCurrentMovie />
-            </LayoutCurrentMovie>
+            <CurrentMovie />
           </Layout>
         </Route>
-        <Route exact path="/kinoland/movies/:movieId/videos">
-          <Layout>
-            <LayoutCurrentMovie>
-              <Trailer />
-            </LayoutCurrentMovie>
-          </Layout>
-        </Route>
-        <Route exact path="/kinoland/serial/:movieId/details">
+
+        <Route exact path="/kinoland/serial/:movieId/videos">
           <Layout>
             <CurrentSerial />
           </Layout>
