@@ -14,7 +14,7 @@ function BtnCurrentPage(props) {
           }
         }}
       >
-        details
+        DETAILS
       </button>
       <button
         onClick={() => {
@@ -25,7 +25,7 @@ function BtnCurrentPage(props) {
           }
         }}
       >
-        videos
+        TRALER
       </button>
       <button
         onClick={() => {
@@ -36,7 +36,7 @@ function BtnCurrentPage(props) {
           }
         }}
       >
-        actors
+        ACTORS
       </button>
     </div>
   );
