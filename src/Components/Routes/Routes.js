@@ -9,6 +9,8 @@ import NowPlaying from "../MainPage/Content/Movies/NowPlaying/NowPlaying";
 import OnTheAir from "../MainPage/Content/TV_serials/OnTheAir/OnTheAir";
 import SearchMovies from "../MainPage/Content/SearchMovies/SearchMovies";
 import Serials from "../MainPage/Content/TV_serials/Serials";
+import ShowInfoCurrentPage from "../MainPage/Content/ShowCurrentMovies/infoCurrentMovie/showInfoCurrentPage";
+import ShowTrailer from "../MainPage/Content/ShowCurrentMovies/trailer/showTrailer";
 import TopRated from "../MainPage/Content/Movies/TopRated/TopRated";
 import TopRatedSerials from "../MainPage/Content/TV_serials/TopRated/TopRatedSerials";
 import { createBrowserHistory } from "history";
@@ -54,13 +56,21 @@ function Routes() {
             <TopRated />
           </Layout>
         </Route>
-        <Route exact path="/kinoland/movies/:movieId">
+        <Route exact path="/kinoland/movies/:movieId/details">
           <Layout>
-            <CurrentMovie />
+            <CurrentMovie>
+              <ShowInfoCurrentPage />
+            </CurrentMovie>
           </Layout>
         </Route>
-
-        <Route exact path="/kinoland/serial/:movieId/videos">
+        <Route exact path="/kinoland/movies/:movieId/videos">
+          <Layout>
+            <CurrentMovie>
+              <ShowTrailer />
+            </CurrentMovie>
+          </Layout>
+        </Route>
+        <Route exact path="/kinoland/serial/:movieId">
           <Layout>
             <CurrentSerial />
           </Layout>

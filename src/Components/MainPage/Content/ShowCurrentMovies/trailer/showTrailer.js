@@ -1,5 +1,14 @@
+import { useEffect, useState } from "react";
+
+import { getVideosMovie } from "../../../../../store/data/dataOfMovie";
+import { useParams } from "react-router-dom";
+
 function ShowTrailer(props) {
-  const { video } = props;
+  const [video, setVideo] = useState([]);
+  const params = useParams();
+  useEffect(() => {
+    getVideosMovie(params).then((res) => setVideo(res));
+  }, [params]);
   if (video.length !== 0) {
     return (
       <div id="showItem-trailer">

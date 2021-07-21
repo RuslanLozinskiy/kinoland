@@ -1,6 +1,14 @@
+import { useEffect, useState } from "react";
+
+import { getCurrentMovie } from "../../../../../store/data/dataOfMovie";
+import {useParams} from "react-router-dom";
 
 function ShowdataCurrentPage(props) {
-  const { data } = props;
+  const [data, setData] = useState([]);
+  const params = useParams();
+  useEffect(() => {
+    getCurrentMovie(params).then((res) => setData(res));
+  }, [params]);
   if (data.length !== 0) {
     return (
       <div className="showItem-info">

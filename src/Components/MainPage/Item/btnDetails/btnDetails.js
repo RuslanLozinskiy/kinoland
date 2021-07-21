@@ -10,7 +10,7 @@ function BtnDetails(props) {
         if (details.hasOwnProperty("original_name")) {
           history.push(`/kinoland/serial/${details.id}`);
         } else {
-          history.push(`/kinoland/movies/${details.id}`);
+          history.push(`/kinoland/movies/${details.id}/details`);
         }
       }}
     >
