@@ -225,10 +225,10 @@ body {
   left: 21%;
 }
 .similarItems {
-  display: flex;
   width: 100%;
-  flex-direction: column;
   align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .slider-similar-items .movies-card {
   min-width: 250px;
@@ -238,11 +238,9 @@ body {
 .btn-slider-prev {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  left: 10%;
 }
 .btn-slider-next,
 .btn-slider-prev {
-  position: absolute;
   border: 1px solid black;
   border-width: 0 0 2px 2px;
   width: 50px;
@@ -250,7 +248,6 @@ body {
   line-height: 0;
   font-size: 0;
   cursor: pointer;
-  top: 210%;
 }
 
 .btn-slider-next {
@@ -276,8 +273,9 @@ opacity: 0.6;
   color: whitesmoke;
   height: 50%;
 }
-.btn-currentPage {
-  position: relative;
+#text-similar-items {
+  display:flex;
+  justify-content: center;
 }
 .btn-currentPage button {
   color: #000;

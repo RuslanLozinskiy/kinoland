@@ -39,20 +39,24 @@ function SimilarItems(props) {
   };
 
   return (
+    <>
+    <h2 id="text-similar-items">ПОХОЖИЕ</h2>
     <div className="similarItems">
-      <h2 id="text-similar-items">ПОХОЖИЕ</h2>
-      <div className="slider-similar-items" ref={slider}>
-        <Item item={similarItems} image={image} />
-      </div>
       <div
         className={togL ? "btn-slider-prev" : "false"}
         onClick={prevHandler}
       ></div>
+      
+      <div className="slider-similar-items" ref={slider}>
+        <Item item={similarItems} image={image} />
+      </div>
+      
       <div
         className={togR ? "btn-slider-next" : "false"}
         onClick={nextHandler}
       ></div>
     </div>
+    </>
   );
 }
 export default SimilarItems;
