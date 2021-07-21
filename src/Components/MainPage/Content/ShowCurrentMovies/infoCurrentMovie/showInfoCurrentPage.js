@@ -16,7 +16,6 @@ function ShowdataCurrentPage(props) {
     }
   }, [params]);
   if (data.length !== 0) {
-    console.log(data);
     return (
       <div className="showItem-info">
         <p>

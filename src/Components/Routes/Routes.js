@@ -80,7 +80,7 @@ function Routes() {
         <Route exact path="/kinoland/serial/:serialId/videos">
           <Layout>
             <CurrentSerial>
-              {/* <ShowTrailer /> */}
+              <ShowTrailer />
             </CurrentSerial>
           </Layout>
         </Route>
