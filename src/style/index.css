@@ -143,6 +143,7 @@ body {
 
 .showItem-info p {
   font-size: 135%;
+  border-top: 2px solid #dee2e6;
 }
 
 #search-header input {
@@ -279,12 +280,17 @@ opacity: 0.6;
 }
 .btn-currentPage button {
   color: #000;
-  font-size: 120%;
+  font-size: 140%;
   width: 100px;
   text-decoration: none;
   cursor: pointer;
-  height: 30px;
+  height: 50px;
   border: none;
+  background-color: white;
+}
+.btn-currentPage {
+  display: flex;
+  justify-content: center;
 }
 .btn-currentPage button:hover {
   background-color: #dcdcdc;

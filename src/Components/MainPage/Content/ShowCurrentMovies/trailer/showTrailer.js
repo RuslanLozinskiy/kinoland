@@ -14,6 +14,7 @@ function ShowTrailer(props) {
       getVideosSerial(params).then((res) => setVideo(res));
     }
   }, [params]);
+  console.log(video);
   if (video.length !== 0) {
     return (
       <div id="showItem-trailer">
