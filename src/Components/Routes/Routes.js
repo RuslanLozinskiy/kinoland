@@ -70,9 +70,18 @@ function Routes() {
             </CurrentMovie>
           </Layout>
         </Route>
-        <Route exact path="/kinoland/serial/:movieId">
+        <Route exact path="/kinoland/serial/:serialId/details">
           <Layout>
-            <CurrentSerial />
+            <CurrentSerial>
+              <ShowInfoCurrentPage/>
+            </CurrentSerial>
+          </Layout>
+        </Route>
+        <Route exact path="/kinoland/serial/:serialId/videos">
+          <Layout>
+            <CurrentSerial>
+              {/* <ShowTrailer /> */}
+            </CurrentSerial>
           </Layout>
         </Route>
         <Route exact path="/kinoland/search/:name">

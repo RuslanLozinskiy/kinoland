@@ -8,7 +8,7 @@ function BtnDetails(props) {
       className="details"
       onClick={() => {
         if (details.hasOwnProperty("original_name")) {
-          history.push(`/kinoland/serial/${details.id}`);
+          history.push(`/kinoland/serial/${details.id}/details`);
         } else {
           history.push(`/kinoland/movies/${details.id}/details`);
         }

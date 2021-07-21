@@ -44,7 +44,7 @@ export const getAiringToday = async () => {
 export const getVideosSerial = async (params) => {
   try {
     const data = await axios.get(
-      `https://api.themoviedb.org/3/tv/${params.movieId}/videos?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=ru-RU`
+      `https://api.themoviedb.org/3/tv/${params.serialId}/videos?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=ru-RU`
     );
     return data.data.results;
   } catch (err) {
@@ -54,7 +54,7 @@ export const getVideosSerial = async (params) => {
 export const getLinkSerial = async (params) => {
   try {
     const data = await axios.get(
-      `https://api.themoviedb.org/3/tv/${params.movieId}/watch/providers?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=ru-RU`
+      `https://api.themoviedb.org/3/tv/${params.serialId}/watch/providers?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=ru-RU`
     );
     return data.data.results;
   } catch (err) {
@@ -65,7 +65,7 @@ export const getLinkSerial = async (params) => {
 export const getSimilarSerial = async (params) => {
   try {
     const data = await axios.get(
-      `https://api.themoviedb.org/3/tv/${params.movieId}/similar?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=ru-RU&page=1`
+      `https://api.themoviedb.org/3/tv/${params.serialId}/similar?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=ru-RU&page=1`
     );
     return data.data.results;
   } catch (err) {
@@ -75,7 +75,7 @@ export const getSimilarSerial = async (params) => {
 export const getCurrentSerial = async (params) => {
   try {
     const data = await axios.get(
-      `https://api.themoviedb.org/3/tv/${params.movieId}?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=ru-RU`
+      `https://api.themoviedb.org/3/tv/${params.serialId}?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=ru-RU`
     );
     return data.data;
   } catch (err) {
