@@ -1,5 +1,6 @@
 import { Route, Router, Switch } from "react-router-dom";
 
+import ActorsCurrentPage from "../MainPage/Content/ShowCurrentMovies/ActorsCurrentPage/actorsCurrentPage";
 import CurrentMovie from "../MainPage/Content/Movies/MoviePage/CurrentMovie";
 import CurrentSerial from "../MainPage/Content/TV_serials/SerialPage/CurrentSerial";
 import Home from "../MainPage/Content/Home/Home";
@@ -70,6 +71,13 @@ function Routes() {
             </CurrentMovie>
           </Layout>
         </Route>
+        <Route exact path="/kinoland/movies/:movieId/actors">
+          <Layout>
+            <CurrentMovie>
+              <ActorsCurrentPage/>
+            </CurrentMovie>
+          </Layout>
+        </Route>
         <Route exact path="/kinoland/serial/:serialId/details">
           <Layout>
             <CurrentSerial>
@@ -81,6 +89,13 @@ function Routes() {
           <Layout>
             <CurrentSerial>
               <ShowTrailer />
+            </CurrentSerial>
+          </Layout>
+        </Route>
+        <Route exact path="/kinoland/serial/:serialId/actors">
+          <Layout>
+            <CurrentSerial>
+              <ActorsCurrentPage/>
             </CurrentSerial>
           </Layout>
         </Route>

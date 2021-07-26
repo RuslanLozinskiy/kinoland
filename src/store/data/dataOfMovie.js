@@ -90,3 +90,14 @@ export const foundMovie = async (title) => {
     console.error("something wrong");
   }
 };
+
+export const getActorsOfMovie = async (params) => {
+  try {
+    const data = await axios.get(
+      `https://api.themoviedb.org/3/movie/${params.movieId}/credits?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=en-EN`
+    );
+    return data.data.cast;
+  } catch (err) {
+    console.error("something wrong");
+  }
+};
