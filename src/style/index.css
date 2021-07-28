@@ -137,13 +137,14 @@ body {
 }
 .showItem-info table {
 text-align: left;
+width: 100%;
 }
 .showItem-info table tbody th,td {
  
   border-top: 1px solid #dee2e6;
 }
 .showItem-info table tbody td {
-  padding-left: 13%;
+  /* padding-left: 13%; */
 }
 .showItem-info p {
   font-size: 115%;
