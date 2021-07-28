@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kinoland/static/css/main.be50bb98.chunk.css",
+    "main.css": "/kinoland/static/css/main.421f70c9.chunk.css",
     "main.js": "/kinoland/static/js/main.e2c27345.chunk.js",
     "main.js.map": "/kinoland/static/js/main.e2c27345.chunk.js.map",
     "runtime-main.js": "/kinoland/static/js/runtime-main.d3b3acaa.js",
@@ -8,13 +8,13 @@
     "static/js/2.06b203d2.chunk.js": "/kinoland/static/js/2.06b203d2.chunk.js",
     "static/js/2.06b203d2.chunk.js.map": "/kinoland/static/js/2.06b203d2.chunk.js.map",
     "index.html": "/kinoland/index.html",
-    "static/css/main.be50bb98.chunk.css.map": "/kinoland/static/css/main.be50bb98.chunk.css.map",
+    "static/css/main.421f70c9.chunk.css.map": "/kinoland/static/css/main.421f70c9.chunk.css.map",
     "static/js/2.06b203d2.chunk.js.LICENSE.txt": "/kinoland/static/js/2.06b203d2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d3b3acaa.js",
     "static/js/2.06b203d2.chunk.js",
-    "static/css/main.be50bb98.chunk.css",
+    "static/css/main.421f70c9.chunk.css",
     "static/js/main.e2c27345.chunk.js"
   ]
 }
