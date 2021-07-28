@@ -127,7 +127,7 @@ body {
 }
 
 .showItem-overview {
-  width: 200%;
+  width: 250%;
   height: 50%;
   position: absolute;
   top: 0%;
@@ -135,23 +135,20 @@ body {
   font-size: 120%;
   line-height: 1.4;
 }
-
-.showItem-info {
-  line-height: 1.7;
+.showItem-info table {
+text-align: left;
+}
+.showItem-info table tbody th,td {
  
-  
+  border-top: 1px solid #dee2e6;
+}
+.showItem-info table tbody td {
+  padding-left: 13%;
+}
+.showItem-info p {
+  font-size: 115%;
 }
 
-.showItem-info p {
-  font-size: 125%;
-  border-top: 2px solid #dee2e6;
-  height: 6vh;
- display: flex;
- justify-content:space-between;
-}
-.showItem-info p:first-child {
- border-top: 0;
-}
 #search-header input {
   height: 27px;
   border: 0;
@@ -284,13 +281,15 @@ body {
 #text-similar-items {
   display: flex;
   justify-content: center;
+  padding-top: 5%;
 }
 .btn-currentPage button {
   color: #000;
-  font-size: 130%;
+  font-size: 140%;
   width: 25%;
   text-decoration: none;
   cursor: pointer;
+  height: 27px;
   border: none;
   background-color: white;
   border-right: 2px solid #dee2e6;
@@ -302,7 +301,6 @@ body {
   padding-top: 2%;
   display: flex;
   justify-content: center;
-  
 }
 .btn-currentPage button:hover {
   background-color: #dcdcdc;
@@ -316,4 +314,5 @@ body {
 }
 .currentPage {
   background-color: white;
+  line-height: 1.4;
 }

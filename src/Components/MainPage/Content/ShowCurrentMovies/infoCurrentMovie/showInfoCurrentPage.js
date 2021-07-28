@@ -18,47 +18,72 @@ function ShowdataCurrentPage(props) {
   if (data.length !== 0) {
     return (
       <div className="showItem-info">
-        <p>
-          <b>Статус: </b>
-          {data.status}
-        </p>
-        <p>
-          <b>Дата выхода: </b>{" "}
-          {data.hasOwnProperty("release_date")
-            ? data.release_date
-            : data.first_air_date}
-        </p>
-        <p>
-          <b>Продолжительность: </b>
-          {data.hasOwnProperty("episode_run_time")
-            ? data.episode_run_time
-            : data.runtime}{" "}
-          минут
-        </p>
-        {data.production_countries.length !== 0 ? (
-          <p>
-            <b>Страна: </b>
-            {data.production_countries[0].name}
-          </p>
-        ) : null}
-
-        {data.hasOwnProperty("budget") ? (
-          <p>
-            <b>Бюджет: </b> {data.budget} $
-          </p>
-        ) : (
-          ""
-        )}
-        {data.genres.length !== 0 ? (
-          <p>
-            <b>Жанры: </b>
-            {data.genres.map((a) => `${a.name.toLowerCase()}; `)}
-          </p>
-        ) : null}
-
-        <p>
-          <b>Язык оригинала:</b> {data.original_language}
-        </p>
+        <table>
+          <tbody>
+            <tr>
+              <th>Статус:</th>
+              <td>
+                <p>{data.status}</p>
+              </td>
+            </tr>
+            <tr>
+              <th>Дата выхода:</th>
+              <td>
+                {" "}
+                {data.hasOwnProperty("release_date") ? (
+                  <p>{data.release_date}</p>
+                ) : (
+                  <p>{data.first_air_date}</p>
+                )}
+              </td>
+            </tr>
+            <tr>
+              <th>Продолжительность:</th>
+              <td>
+                {data.hasOwnProperty("episode_run_time") ? (
+                  <p>{data.episode_run_time} минут</p>
+                ) : (
+                  <p>{data.runtime} минут</p>
+                )}{" "}
+              </td>
+            </tr>{" "}
+            <tr>
+              <th>Страна:</th>
+              <td>
+                {" "}
+                {data.production_countries.length !== 0 ? (
+                  <p>{data.production_countries[0].name}</p>
+                ) : null}
+              </td>
+            </tr>
+            {data.hasOwnProperty("budget") ? (
+              <tr>
+                <th>Бюджет:</th>
+                <td>
+                  {" "}
+                  <p>{data.budget} $</p>
+                </td>
+              </tr>
+            ) : (
+              ""
+            )}
+            <tr>
+              <th>Жанры:</th>
+              <td>
+                {" "}
+                {data.genres.length !== 0 ? (
+                  <p>{data.genres.map((a) => `${a.name.toLowerCase()}; `)}</p>
+                ) : null}
+              </td>
+            </tr>{" "}
+            <tr>
+              <th>Язык оригинала:</th>
+              <td>
+                <p>{data.original_language}</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     );
   } else {
