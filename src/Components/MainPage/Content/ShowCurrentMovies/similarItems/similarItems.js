@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import Item from "../../../Item/Item";
 
@@ -8,7 +8,9 @@ function SimilarItems(props) {
   const [togL, setTogL] = useState(true);
   let [position, setPosition] = useState(0);
   const slider = useRef(null);
-
+useEffect(() => {
+window.scrollTo(0,0);
+})
   const prevHandler = (e) => {
     setPosition((position += 100));
 

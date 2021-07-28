@@ -136,15 +136,15 @@ body {
   line-height: 1.4;
 }
 .showItem-info table {
-text-align: left;
-width: 100%;
+  text-align: left;
+  width: 100%;
 }
-.showItem-info table tbody th,td {
- 
+.showItem-info table tbody th,
+td {
   border-top: 1px solid #dee2e6;
 }
-.showItem-info table tbody td {
-  /* padding-left: 13%; */
+.showItem-info table th{
+  width: 35%;
 }
 .showItem-info p {
   font-size: 115%;
@@ -282,7 +282,7 @@ width: 100%;
 #text-similar-items {
   display: flex;
   justify-content: center;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 .btn-currentPage button {
   color: #000;

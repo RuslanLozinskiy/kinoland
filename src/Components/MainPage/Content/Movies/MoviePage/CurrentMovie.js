@@ -19,6 +19,7 @@ function CurrentMovie(props) {
     getCurrentMovie(params).then((res) => setData(res));
     getConfiguration().then((res) => setImage(res));
     getSimilarMovie(params).then((res) => setSimilarItem(res));
+    
   }, [params]);
   return (
     <div className="currentPage">
