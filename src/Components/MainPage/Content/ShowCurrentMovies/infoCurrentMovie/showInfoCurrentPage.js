@@ -29,7 +29,6 @@ function ShowdataCurrentPage(props) {
             <tr>
               <th>Дата выхода:</th>
               <td>
-                {" "}
                 {data.hasOwnProperty("release_date") ? (
                   <p>{data.release_date}</p>
                 ) : (
@@ -44,13 +43,12 @@ function ShowdataCurrentPage(props) {
                   <p>{data.episode_run_time} минут</p>
                 ) : (
                   <p>{data.runtime} минут</p>
-                )}{" "}
+                )}
               </td>
-            </tr>{" "}
+            </tr>
             <tr>
               <th>Страна:</th>
               <td>
-                {" "}
                 {data.production_countries.length !== 0 ? (
                   <p>{data.production_countries[0].name}</p>
                 ) : null}
@@ -60,22 +58,18 @@ function ShowdataCurrentPage(props) {
               <tr>
                 <th>Бюджет:</th>
                 <td>
-                  {" "}
                   <p>{data.budget} $</p>
                 </td>
               </tr>
-            ) : (
-              ""
-            )}
+            ) : null}
             <tr>
               <th>Жанры:</th>
               <td>
-                {" "}
                 {data.genres.length !== 0 ? (
                   <p>{data.genres.map((a) => `${a.name.toLowerCase()}; `)}</p>
                 ) : null}
               </td>
-            </tr>{" "}
+            </tr>
             <tr>
               <th>Язык оригинала:</th>
               <td>

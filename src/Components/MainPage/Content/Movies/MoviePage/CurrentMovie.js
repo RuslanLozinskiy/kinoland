@@ -19,16 +19,15 @@ function CurrentMovie(props) {
     getCurrentMovie(params).then((res) => setData(res));
     getConfiguration().then((res) => setImage(res));
     getSimilarMovie(params).then((res) => setSimilarItem(res));
-    
   }, [params]);
   return (
     <div className="currentPage">
       <HeaderOfCurrentPage data={data} image={image} />
       <div className="container-Info-CurrentPage">
-         <BtnCurrentPage details={data} />
-      {props.children}
+        <BtnCurrentPage details={data} />
+        {props.children}
       </div>
-     
+
       {similarItem.length !== 0 ? (
         <SimilarItems similarItems={similarItem} image={image} />
       ) : (

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 import Item from "../../../Item/Item";
 
@@ -8,9 +8,6 @@ function SimilarItems(props) {
   const [togL, setTogL] = useState(true);
   let [position, setPosition] = useState(0);
   const slider = useRef(null);
-useEffect(() => {
-window.scrollTo(0,0);
-})
   const prevHandler = (e) => {
     setPosition((position += 100));
 
@@ -42,22 +39,22 @@ window.scrollTo(0,0);
 
   return (
     <>
-    <h2 id="text-similar-items">ПОХОЖИЕ</h2>
-    <div className="similarItems">
-      <div
-        className={togL ? "btn-slider-prev" : "false"}
-        onClick={prevHandler}
-      ></div>
-      
-      <div className="slider-similar-items" ref={slider}>
-        <Item item={similarItems} image={image} />
+      <h2 id="text-similar-items">ПОХОЖИЕ</h2>
+      <div className="similarItems">
+        <div
+          className={togL ? "btn-slider-prev" : "false"}
+          onClick={prevHandler}
+        ></div>
+
+        <div className="slider-similar-items" ref={slider}>
+          <Item item={similarItems} image={image} />
+        </div>
+
+        <div
+          className={togR ? "btn-slider-next" : "false"}
+          onClick={nextHandler}
+        ></div>
       </div>
-      
-      <div
-        className={togR ? "btn-slider-next" : "false"}
-        onClick={nextHandler}
-      ></div>
-    </div>
     </>
   );
 }

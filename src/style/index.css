@@ -286,22 +286,19 @@ td {
 }
 .btn-currentPage button {
   color: #000;
-  font-size: 140%;
-  width: 25%;
+  font-size: 120%;
+  width: 15%;
   text-decoration: none;
   cursor: pointer;
   height: 27px;
   border: none;
   background-color: white;
-  border-right: 2px solid #dee2e6;
-}
-.btn-currentPage button:last-child {
-  border-right: 0;
+  text-align: left;
+
 }
 .btn-currentPage {
   padding-top: 2%;
-  display: flex;
-  justify-content: center;
+  padding-bottom: -1%;
 }
 .btn-currentPage button:hover {
   background-color: #dcdcdc;

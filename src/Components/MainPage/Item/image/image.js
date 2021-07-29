@@ -6,7 +6,7 @@ function Image(props) {
   return (
     <LazyLoad className="movies-image" height={200}>
       <img
-        src={image.base_url + image.poster_sizes[4] + item.poster_path}
+        src={image.base_url + image.poster_sizes[2] + item.poster_path}
         alt=""
       />
     </LazyLoad>
