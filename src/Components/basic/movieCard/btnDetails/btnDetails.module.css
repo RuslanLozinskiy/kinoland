@@ -1,0 +1,13 @@
+.details {
+  border: 2px solid grey;
+  border-radius: 8px;
+  background-color: transparent;
+  color: grey;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.details:hover {
+  background-color: #d3d3d3;
+}

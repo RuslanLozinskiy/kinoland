@@ -1,0 +1,25 @@
+.searchHeader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+.searchHeader input {
+  height: 27px;
+  border: 0;
+  outline: none;
+  font-size: 120%;
+}
+
+.searchHeader button {
+  height: 28px;
+  border: none;
+  outline: none;
+  background: #e8e8e8;
+  color: #8b8b8b;
+  text-decoration: none;
+}
+
+.searchHeader button:hover {
+  background-color: #dcdcdc;
+}

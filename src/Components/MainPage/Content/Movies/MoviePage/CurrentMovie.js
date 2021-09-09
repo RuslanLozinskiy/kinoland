@@ -1,14 +1,17 @@
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+
 import {
   getCurrentMovie,
   getSimilarMovie,
 } from "../../../../../store/data/dataOfMovie";
-import { useEffect, useState } from "react";
-
-import BtnCurrentPage from "../../ShowCurrentMovies/btnCurrentPage/btnCurrentPage";
-import HeaderOfCurrentPage from "../../ShowCurrentMovies/headerCurrentPage/headerOfCurrentPage";
-import SimilarItems from "../../ShowCurrentMovies/similarItems/similarItems";
 import { getConfiguration } from "../../../../../store/data/dataConfg";
-import { useParams } from "react-router-dom";
+
+import HeaderOfCurrentPage from "../../../../basic/currentMovie/headerCurrentPage/headerOfCurrentPage";
+import BtnCurrentPage from "../../../../basic/currentMovie/btnCurrentPage/btnCurrentPage";
+import SimilarItems from "../../../../basic/currentMovie/similarItems/similarItems";
+
+import style from "./CurrentMovie.module.css";
 
 function CurrentMovie(props) {
   const [data, setData] = useState([]);
@@ -21,9 +24,9 @@ function CurrentMovie(props) {
     getSimilarMovie(params).then((res) => setSimilarItem(res));
   }, [params]);
   return (
-    <div className="currentPage">
+    <div className={style.currentPage}>
       <HeaderOfCurrentPage data={data} image={image} />
-      <div className="container-Info-CurrentPage">
+      <div className={style.containerInfoCurrentPage}>
         <BtnCurrentPage details={data} />
         {props.children}
       </div>

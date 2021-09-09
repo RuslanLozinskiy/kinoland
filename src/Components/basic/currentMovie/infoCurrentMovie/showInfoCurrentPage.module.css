@@ -1,0 +1,14 @@
+.showItemInfo table {
+  text-align: left;
+  width: 100%;
+}
+.showItemInfo table tbody th,
+td {
+  border-top: 1px solid #dee2e6;
+}
+.showItemInfo table th {
+  width: 35%;
+}
+.showItemInfo p {
+  font-size: 115%;
+}

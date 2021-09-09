@@ -1,0 +1,19 @@
+.btnCurrentPage {
+  padding-top: 2%;
+  height: 27px;
+}
+.buttonCurrentPage {
+  color: #000;
+  font-size: 100%;
+  width: 15%;
+  text-decoration: none;
+  cursor: pointer;
+  height: 27px;
+  background-color: white;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+.buttonCurrentPage:hover {
+  opacity: 0.5;
+}

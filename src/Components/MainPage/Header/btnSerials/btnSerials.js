@@ -1,20 +1,22 @@
 import { useHistory } from "react-router-dom";
 
+import style from "./btnSerials.module.css";
+
 function BtnSerials() {
   const history = useHistory();
   return (
-    <div className="dropdown-movies">
+    <div className={style.dropdownMovies}>
       <button
-        className="header-button"
+        className={style.headerButton}
         onClick={() => {
           history.push("/kinoland/serials");
         }}
       >
         TV
       </button>
-      <div className="dropdown-content">
+      <div className={style.dropdownContent}>
         <button
-          className="dropdown-button"
+          className={style.dropdownButton}
           onClick={() => {
             history.push("/kinoland/serials/ontheair");
           }}
@@ -22,7 +24,7 @@ function BtnSerials() {
           NOW PLAYING
         </button>
         <button
-          className="dropdown-button"
+          className={style.dropdownButton}
           onClick={() => {
             history.push("/kinoland/serials/toprated");
           }}

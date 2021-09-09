@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 
-import Item from "../../Item/Item";
+import Item from "../../../basic/movieCard/Item";
+
 import { getConfiguration } from "../../../../store/data/dataConfg";
 import { getMovies } from "../../../../store/data/dataOfMovie";
+
+import style from "./Movies.module.css";
 
 function Movies() {
   const [movies, setMovies] = useState([]);
@@ -12,7 +15,7 @@ function Movies() {
     getConfiguration().then((res) => setImageMovie(res));
   }, []);
   return (
-    <div className="movies">
+    <div className={style.movies}>
       <Item item={movies} image={imageMovie} />
     </div>
   );

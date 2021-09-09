@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 
-import Item from "../../../Item/Item";
+import Item from "../../../../basic/movieCard/Item";
+
 import { getConfiguration } from "../../../../../store/data/dataConfg";
 import { getOnTheAirSerials } from "../../../../../store/data/dataOfSerial";
+
+import style from "./OnTheAir.module.css";
 
 function OnTheAir() {
   const [onTheAir, setOnTheAir] = useState([]);
@@ -12,7 +15,7 @@ function OnTheAir() {
     getConfiguration().then((res) => setOnTheAirImage(res));
   }, []);
   return (
-    <div className="movies">
+    <div className={style.movies}>
       <Item item={onTheAir} image={onTheAirImage} />
     </div>
   );

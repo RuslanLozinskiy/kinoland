@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 
-import Item from "../../../Item/Item";
 import { getConfiguration } from "../../../../../store/data/dataConfg";
 import { getTopRatedSerials } from "../../../../../store/data/dataOfSerial";
+
+import Item from "../../../../basic/movieCard/Item";
+
+import style from "./TopRatedSerials.module.css";
 
 function TopRatedSerials(props) {
   const [topRated, setTopRated] = useState([]);
@@ -12,7 +15,7 @@ function TopRatedSerials(props) {
     getConfiguration().then((res) => setTopRatedImage(res));
   }, []);
   return (
-    <div className="movies">
+    <div className={style.movies}>
       <Item item={topRated} image={topRatedImage} />
     </div>
   );

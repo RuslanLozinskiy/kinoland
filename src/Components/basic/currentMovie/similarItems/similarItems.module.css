@@ -1,0 +1,46 @@
+#textSimilarItems {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+.btnSliderPrev {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.btnSliderNext,
+.btnSliderPrev {
+  border: 1px solid black;
+  border-width: 0 0 2px 2px;
+  width: 50px;
+  height: 50px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+.sliderSimilarItems {
+  width: 56.1%;
+  height: 30%;
+  top: 190%;
+  min-width: 250px;
+  padding: 1px;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+  left: 21%;
+}
+.similarItems {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+.sliderSimilarItems {
+  min-width: 250px;
+  padding: 1px;
+}
+.btnSliderNext {
+    right: 10%;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }

@@ -1,6 +1,5 @@
 import { Route, Router, Switch } from "react-router-dom";
 
-import ActorsCurrentPage from "../MainPage/Content/ShowCurrentMovies/ActorsCurrentPage/actorsCurrentPage";
 import CurrentMovie from "../MainPage/Content/Movies/MoviePage/CurrentMovie";
 import CurrentSerial from "../MainPage/Content/TV_serials/SerialPage/CurrentSerial";
 import Home from "../MainPage/Content/Home/Home";
@@ -10,11 +9,12 @@ import NowPlaying from "../MainPage/Content/Movies/NowPlaying/NowPlaying";
 import OnTheAir from "../MainPage/Content/TV_serials/OnTheAir/OnTheAir";
 import SearchMovies from "../MainPage/Content/SearchMovies/SearchMovies";
 import Serials from "../MainPage/Content/TV_serials/Serials";
-import ShowInfoCurrentPage from "../MainPage/Content/ShowCurrentMovies/infoCurrentMovie/showInfoCurrentPage";
-import ShowTrailer from "../MainPage/Content/ShowCurrentMovies/trailer/showTrailer";
+import ShowInfoCurrentPage from "../basic/currentMovie/infoCurrentMovie/showInfoCurrentPage";
 import TopRated from "../MainPage/Content/Movies/TopRated/TopRated";
 import TopRatedSerials from "../MainPage/Content/TV_serials/TopRated/TopRatedSerials";
 import { createBrowserHistory } from "history";
+// import ActorsCurrentPage from "../basic/currentMovie/showActorsCurrentPage/actorsCurrentPage";
+import ShowTrailer from "../basic/currentMovie/trailer/showTrailer";
 
 function Routes() {
   const customHistory = createBrowserHistory();
@@ -71,17 +71,17 @@ function Routes() {
             </CurrentMovie>
           </Layout>
         </Route>
-        <Route exact path="/kinoland/movies/:movieId/actors">
+        {/* <Route exact path="/kinoland/movies/:movieId/actors">
           <Layout>
             <CurrentMovie>
-              <ActorsCurrentPage/>
+              <ActorsCurrentPage />
             </CurrentMovie>
           </Layout>
-        </Route>
+        </Route> */}
         <Route exact path="/kinoland/serial/:serialId/details">
           <Layout>
             <CurrentSerial>
-              <ShowInfoCurrentPage/>
+              <ShowInfoCurrentPage />
             </CurrentSerial>
           </Layout>
         </Route>
@@ -92,14 +92,14 @@ function Routes() {
             </CurrentSerial>
           </Layout>
         </Route>
-        <Route exact path="/kinoland/serial/:serialId/actors">
+        {/* <Route exact path="/kinoland/serial/:serialId/actors">
           <Layout>
             <CurrentSerial>
-              <ActorsCurrentPage/>
+              <ActorsCurrentPage />
             </CurrentSerial>
           </Layout>
-        </Route>
-        <Route exact path="/kinoland/search/:name">
+        </Route> */}
+        <Route exact path="/kinoland/search">
           <Layout>
             <SearchMovies />
           </Layout>

@@ -1,0 +1,9 @@
+.showItemOverview {
+  width: 250%;
+  height: 50%;
+  position: absolute;
+  top: 0%;
+  left: 120%;
+  font-size: 120%;
+  line-height: 1.4;
+}

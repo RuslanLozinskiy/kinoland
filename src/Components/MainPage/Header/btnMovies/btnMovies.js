@@ -1,19 +1,22 @@
 import { useHistory } from "react-router-dom";
+
+import style from "./btnMovies.module.css";
+
 function BtnMovies() {
   const history = useHistory();
   return (
-    <div className="dropdown-movies">
+    <div className={style.dropdownMovies}>
       <button
-        className="header-button"
+        className={style.headerButton}
         onClick={() => {
           history.push("/kinoland/movies");
         }}
       >
         MOVIES
       </button>
-      <div className="dropdown-content">
+      <div className={style.dropdownContent}>
         <button
-          className="dropdown-button"
+          className={style.dropdownButton}
           onClick={() => {
             history.push("/kinoland/movies/nowplaying");
           }}
@@ -21,7 +24,7 @@ function BtnMovies() {
           NOW PLAYING
         </button>
         <button
-          className="dropdown-button"
+          className={style.dropdownButton}
           onClick={() => {
             history.push("/kinoland/movies/toprated");
           }}
