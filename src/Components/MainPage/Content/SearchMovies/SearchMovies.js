@@ -18,17 +18,15 @@ function SearchMovies() {
   let [nameMovie, setNameMovies] = useState([]);
   let [nameSerial, setNameSerial] = useState([]);
   let [dataImage, setDataImage] = useState([]);
+
   useEffect(() => {
     setName(location.search.slice(3).toLocaleLowerCase());
   }, [location]);
+
   useEffect(() => {
-    if (name) {
-      foundMovie(name).then((res) => setNameMovies(res));
-      foundSerials(name).then((res) => setNameSerial(res));
-      getConfiguration().then((res) => setDataImage(res));
-    } else {
-      console.log("no");
-    }
+    foundMovie(name).then((res) => setNameMovies(res));
+    foundSerials(name).then((res) => setNameSerial(res));
+    getConfiguration().then((res) => setDataImage(res));
   }, [name]);
 
   return nameMovie.length !== 0 &&
