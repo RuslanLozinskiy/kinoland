@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kinoland/static/css/main.ce8e7c23.chunk.css",
-    "main.js": "/kinoland/static/js/main.62e9fdab.chunk.js",
-    "main.js.map": "/kinoland/static/js/main.62e9fdab.chunk.js.map",
+    "main.js": "/kinoland/static/js/main.e90fa74e.chunk.js",
+    "main.js.map": "/kinoland/static/js/main.e90fa74e.chunk.js.map",
     "runtime-main.js": "/kinoland/static/js/runtime-main.d3b3acaa.js",
     "runtime-main.js.map": "/kinoland/static/js/runtime-main.d3b3acaa.js.map",
     "static/js/2.c541972e.chunk.js": "/kinoland/static/js/2.c541972e.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.d3b3acaa.js",
     "static/js/2.c541972e.chunk.js",
     "static/css/main.ce8e7c23.chunk.css",
-    "static/js/main.62e9fdab.chunk.js"
+    "static/js/main.e90fa74e.chunk.js"
   ]
 }
