@@ -9,11 +9,11 @@
   background-color: #f5f5f5;
   z-index: 1;
 }
-.header button {
+/* .header button {
   height: 30px;
   border: none;
   cursor: pointer;
-}
+} */
 
 .header button:hover {
   background-color: #dcdcdc;

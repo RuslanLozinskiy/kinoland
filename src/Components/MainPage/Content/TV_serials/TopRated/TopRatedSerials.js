@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import { getConfiguration } from "../../../../../store/data/dataConfg";
 import { getTopRatedSerials } from "../../../../../store/data/dataOfSerial";
+import { LoaderSpinner } from "../../../../basic/Loader/LoaderSpinner";
 
 import Item from "../../../../basic/movieCard/Item";
 
@@ -14,10 +15,12 @@ function TopRatedSerials(props) {
     getTopRatedSerials().then((res) => setTopRated(res));
     getConfiguration().then((res) => setTopRatedImage(res));
   }, []);
-  return (
+  return topRated.length !== 0 && topRatedImage.length !== 0 ? (
     <div className={style.movies}>
       <Item item={topRated} image={topRatedImage} />
     </div>
+  ) : (
+    <LoaderSpinner />
   );
 }
 export default TopRatedSerials;

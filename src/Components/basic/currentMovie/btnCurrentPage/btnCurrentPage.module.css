@@ -1,7 +1,8 @@
 .btnCurrentPage {
-  padding-top: 2%;
+  margin-top: 2%;
   height: 27px;
 }
+
 .buttonCurrentPage {
   color: #000;
   font-size: 100%;
@@ -11,9 +12,16 @@
   height: 27px;
   background-color: white;
   text-align: center;
-  border: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 .buttonCurrentPage:hover {
   opacity: 0.5;
+  border-bottom: 2px solid #fc5a5a;
+}
+.buttonCurrentPage:focus {
+  border-bottom: 2px solid #fc5a5a;
 }

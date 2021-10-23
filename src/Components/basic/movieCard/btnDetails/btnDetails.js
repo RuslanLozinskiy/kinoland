@@ -9,7 +9,9 @@ function BtnDetails(props) {
     <button
       className={style.details}
       onClick={() => {
-        window.scrollTo(0, 0);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 300);
 
         if (details.hasOwnProperty("original_name")) {
           history.push(`/kinoland/serial/${details.id}/details`);

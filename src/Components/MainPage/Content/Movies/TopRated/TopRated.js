@@ -6,6 +6,7 @@ import { getConfiguration } from "../../../../../store/data/dataConfg";
 import { getTopRatedMovies } from "./../../../../../store/data/dataOfMovie";
 
 import style from "./TopRated.module.css";
+import { LoaderSpinner } from "../../../../basic/Loader/LoaderSpinner";
 
 function TopRated() {
   const [topRated, setTopRated] = useState([]);
@@ -14,10 +15,12 @@ function TopRated() {
     getTopRatedMovies().then((res) => setTopRated(res));
     getConfiguration().then((res) => setTopRatedImage(res));
   }, []);
-  return (
+  return topRated.length !== 0 && topRatedImage.length !== 0 ? (
     <div className={style.movies}>
       <Item item={topRated} image={topRatedImage} />
     </div>
+  ) : (
+    <LoaderSpinner />
   );
 }
 export default TopRated;

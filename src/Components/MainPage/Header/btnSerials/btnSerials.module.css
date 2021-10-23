@@ -7,6 +7,8 @@
   width: 100px;
   text-decoration: none;
   cursor: pointer;
+  height: 30px;
+  border: none;
 }
 .dropdownContent {
   display: none;
@@ -21,6 +23,8 @@
   color: #000;
   text-decoration: none;
   cursor: pointer;
+  height: 30px;
+  border: none;
 }
 
 .dropdownMovies:hover .dropdownContent {
@@ -34,4 +38,7 @@
 
 .dropdownButton:hover {
   background-color: #dcdcdc;
+}
+.headerButton:hover {
+  border-bottom: 2px solid #fc5a5a;
 }

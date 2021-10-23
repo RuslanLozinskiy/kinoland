@@ -1,9 +1,11 @@
 .showItemInfo table {
   text-align: left;
   width: 100%;
+  margin-top: -0.5%;
 }
 .showItemInfo table tbody th,
 td {
+  
   border-top: 1px solid #dee2e6;
 }
 .showItemInfo table th {

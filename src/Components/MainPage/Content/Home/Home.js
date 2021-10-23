@@ -7,6 +7,7 @@ import { getUpComingMovies } from "./../../../../store/data/dataOfMovie";
 import Item from "../../../basic/movieCard/Item";
 
 import style from "./Home.module.css";
+import { LoaderSpinner } from "../../../basic/Loader/LoaderSpinner";
 
 function Home() {
   const [upComing, setUpComing] = useState([]);
@@ -19,11 +20,15 @@ function Home() {
     getConfiguration().then((res) => setUpComingImage(res));
   }, []);
 
-  return (
+  return upComingImage.length !== 0 &&
+    upComingSerials.length !== 0 &&
+    upComing.length !== 0 ? (
     <div className={style.movies}>
       <Item item={upComingSerials} image={upComingImage} />
       <Item item={upComing} image={upComingImage} />
     </div>
+  ) : (
+    <LoaderSpinner />
   );
 }
 export default Home;

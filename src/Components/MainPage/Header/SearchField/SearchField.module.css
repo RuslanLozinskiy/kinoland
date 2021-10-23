@@ -5,16 +5,14 @@
   z-index: 100;
 }
 .searchHeader input {
-  height: 27px;
-  border: 0;
-  outline: none;
+  height: 30px;
+  border: none;
   font-size: 120%;
 }
 
 .searchHeader button {
-  height: 28px;
+  height: 27px;
   border: none;
-  outline: none;
   background: #e8e8e8;
   color: #8b8b8b;
   text-decoration: none;
@@ -22,4 +20,10 @@
 
 .searchHeader button:hover {
   background-color: #dcdcdc;
+  border-bottom: 2px solid #fc5a5a;
+  cursor: pointer;
+}
+.searchHeader input:focus {
+  border-bottom: 2px solid #fc5a5a;
+  outline: none;
 }

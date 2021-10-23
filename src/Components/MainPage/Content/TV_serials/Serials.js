@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import { getConfiguration } from "../../../../store/data/dataConfg";
 import { getSerials } from "../../../../store/data/dataOfSerial";
+import { LoaderSpinner } from "../../../basic/Loader/LoaderSpinner";
 
 import Item from "../../../basic/movieCard/Item";
 
@@ -14,10 +15,12 @@ function Serials() {
     getSerials().then((res) => setSerials(res));
     getConfiguration().then((res) => setImageSerials(res));
   }, []);
-  return (
+  return serials.length !== 0 && imageSerials.length !== 0 ? (
     <div className={style.movies}>
       <Item item={serials} image={imageSerials} />
     </div>
+  ) : (
+    <LoaderSpinner />
   );
 }
 export default Serials;

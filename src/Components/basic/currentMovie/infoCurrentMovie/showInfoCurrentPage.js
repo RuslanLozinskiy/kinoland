@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-
 import { getCurrentMovie } from "../../../../store/data/dataOfMovie";
 import { getCurrentSerial } from "../../../../store/data/dataOfSerial";
-
 import { useParams } from "react-router-dom";
 
 import style from "./showInfoCurrentPage.module.css";
@@ -18,6 +16,7 @@ function ShowdataCurrentPage(props) {
       getCurrentSerial(params).then((res) => setData(res));
     }
   }, [params]);
+
   if (data.length !== 0) {
     return (
       <div className={style.showItemInfo}>

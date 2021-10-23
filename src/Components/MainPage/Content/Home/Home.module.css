@@ -3,5 +3,5 @@
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-top: 2%;
+  margin-top: 3%;
 }
