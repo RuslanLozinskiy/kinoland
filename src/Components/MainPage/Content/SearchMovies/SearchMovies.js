@@ -36,6 +36,8 @@ function SearchMovies() {
       <Item item={nameSerial} image={dataImage} />
       <Item item={nameMovie} image={dataImage} />
     </div>
+  ) : nameMovie.length === 0 && nameSerial.length === 0 ? (
+    <h2 className={style.nothingFoung}>nothing found</h2>
   ) : (
     <LoaderSpinner />
   );

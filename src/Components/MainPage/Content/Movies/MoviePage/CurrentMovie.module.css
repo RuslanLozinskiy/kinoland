@@ -1,11 +1,8 @@
 .containerInfoCurrentPage {
-  width: 50%;
-  height: 30em;
   background-color: white;
-  position: relative;
-  left: 24%;
 }
 .currentPage {
   background-color: white;
   line-height: 1.4;
+  text-align: center;
 }

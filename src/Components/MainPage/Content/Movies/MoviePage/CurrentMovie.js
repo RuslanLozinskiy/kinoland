@@ -32,7 +32,6 @@ function CurrentMovie(props) {
         <BtnCurrentPage details={data} />
         {props.children}
       </div>
-
       <SimilarItems similarItems={similarItem} image={image} />
     </div>
   ) : (

@@ -8,6 +8,7 @@
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
+  
 }
 .similarMovie {
   margin-bottom: 2%;

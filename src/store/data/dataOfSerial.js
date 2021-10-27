@@ -93,7 +93,7 @@ export const foundSerials = async (title) => {
     console.error("something wrong");
   }
 };
-export const getActorsOfSerial = async (params) => {
+export const getActorsSerial = async (params) => {
   try {
     const data = await axios.get(
       `https://api.themoviedb.org/3/tv/${params.serialId}/credits?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&`

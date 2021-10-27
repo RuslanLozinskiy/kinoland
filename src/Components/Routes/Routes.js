@@ -15,6 +15,7 @@ import TopRatedSerials from "../MainPage/Content/TV_serials/TopRated/TopRatedSer
 import { createBrowserHistory } from "history";
 // import ActorsCurrentPage from "../basic/currentMovie/showActorsCurrentPage/actorsCurrentPage";
 import ShowTrailer from "../basic/currentMovie/trailer/showTrailer";
+import Actors from "../basic/currentMovie/Actors/Actors";
 
 function Routes() {
   const customHistory = createBrowserHistory();
@@ -71,13 +72,13 @@ function Routes() {
             </CurrentMovie>
           </Layout>
         </Route>
-        {/* <Route exact path="/kinoland/movies/:movieId/actors">
+        <Route exact path="/kinoland/movies/:movieId/actors">
           <Layout>
             <CurrentMovie>
-              <ActorsCurrentPage />
+              <Actors />
             </CurrentMovie>
           </Layout>
-        </Route> */}
+        </Route>
         <Route exact path="/kinoland/serial/:serialId/details">
           <Layout>
             <CurrentSerial>
@@ -92,13 +93,13 @@ function Routes() {
             </CurrentSerial>
           </Layout>
         </Route>
-        {/* <Route exact path="/kinoland/serial/:serialId/actors">
+        <Route exact path="/kinoland/serial/:serialId/actors">
           <Layout>
             <CurrentSerial>
-              <ActorsCurrentPage />
+              <Actors />
             </CurrentSerial>
           </Layout>
-        </Route> */}
+        </Route>
         <Route exact path="/kinoland/search">
           <Layout>
             <SearchMovies />

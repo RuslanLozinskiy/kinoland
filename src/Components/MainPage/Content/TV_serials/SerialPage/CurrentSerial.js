@@ -14,7 +14,6 @@ import { LoaderSpinner } from "../../../../basic/Loader/LoaderSpinner";
 
 import style from "./CurrentSerial.module.css";
 
-
 function CurrentSerial(props) {
   const [data, setData] = useState([]);
   const [image, setImage] = useState([]);
@@ -32,7 +31,6 @@ function CurrentSerial(props) {
         <BtnCurrentPage details={data} />
         {props.children}
       </div>
-
       <SimilarItems similarItems={similarItem} image={image} />
     </div>
   ) : (

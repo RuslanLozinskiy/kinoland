@@ -1,7 +1,8 @@
 #showItemTrailer {
-  width: 100%;
-  height: 93%;
+  width: 50%;
+  height: 70vh;
   margin-top: 1%;
+  margin: 0 auto;
 }
 #showItemTrailer iframe {
   width: 100%;

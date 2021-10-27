@@ -1,9 +1,12 @@
 .showItemOverview {
-  width: 250%;
-  height: 50%;
-  position: absolute;
-  top: 0%;
-  left: 120%;
+  width: 100%;
+  padding-left: 10%;
   font-size: 120%;
   line-height: 1.4;
+  text-align: left;
+  overflow: hidden;
+}
+.showItemOverview span {
+  font-size: 200%;
+  display: flex;
 }

@@ -28,10 +28,8 @@ function ShowTrailer(props) {
         />
       </div>
     );
-  } else if (!!video.length) {
-    return null;
   } else {
-    return <h2>Sorry but at the moment we dont have the trailer</h2>;
+    return <h2>Sorry, but at the moment we dont have the trailer</h2>;
   }
 }
 export default ShowTrailer;

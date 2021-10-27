@@ -27,3 +27,9 @@
   border-bottom: 2px solid #fc5a5a;
   outline: none;
 }
+.wrong::placeholder {
+  color: red;
+}
+.correct::placeholder {
+  color: #8b8b8b;
+}

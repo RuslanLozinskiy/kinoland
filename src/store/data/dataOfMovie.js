@@ -91,7 +91,7 @@ export const foundMovie = async (title) => {
   }
 };
 
-export const getActorsOfMovie = async (params) => {
+export const getActorsMovie = async (params) => {
   try {
     const data = await axios.get(
       `https://api.themoviedb.org/3/movie/${params.movieId}/credits?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=en-EN`
