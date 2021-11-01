@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
+import { useParams } from "react-router-dom";
+
 import { getVideosMovie } from "../../../../store/data/dataOfMovie";
 import { getVideosSerial } from "../../../../store/data/dataOfSerial";
-
-import { useParams } from "react-router-dom";
 
 import style from "./showTrailer.module.css";
 

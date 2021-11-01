@@ -1,5 +1,4 @@
-import Progressbar from "../ProgressBar/ProgressBar";
-
+import Progressbar from "../../../../basic/ProgressBar/ProgressBar";
 import style from "./overviewCurrentMovie.module.css";
 
 function OverviewCurrentMovies(props) {

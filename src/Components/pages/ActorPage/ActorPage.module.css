@@ -1,0 +1,12 @@
+.infoActor {
+    display: flex;
+    /* margin: 5% 0% 0% 20%; */
+
+}
+.actorPage {
+    margin: 5% 20% 0% 20%;
+}
+.creditItems {
+    display: flex;
+    flex-wrap: wrap;
+}

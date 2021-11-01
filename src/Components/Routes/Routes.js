@@ -1,21 +1,21 @@
 import { Route, Router, Switch } from "react-router-dom";
 
-import CurrentMovie from "../MainPage/Content/Movies/MoviePage/CurrentMovie";
-import CurrentSerial from "../MainPage/Content/TV_serials/SerialPage/CurrentSerial";
-import Home from "../MainPage/Content/Home/Home";
 import Layout from "./Layout";
 import Movies from "../MainPage/Content/Movies/Movies";
 import NowPlaying from "../MainPage/Content/Movies/NowPlaying/NowPlaying";
 import OnTheAir from "../MainPage/Content/TV_serials/OnTheAir/OnTheAir";
-import SearchMovies from "../MainPage/Content/SearchMovies/SearchMovies";
 import Serials from "../MainPage/Content/TV_serials/Serials";
-import ShowInfoCurrentPage from "../basic/currentMovie/infoCurrentMovie/showInfoCurrentPage";
+import ShowInfoCurrentPage from "../CurrentPages/CurrentMovie/infoCurrentMovie/showInfoCurrentPage";
 import TopRated from "../MainPage/Content/Movies/TopRated/TopRated";
 import TopRatedSerials from "../MainPage/Content/TV_serials/TopRated/TopRatedSerials";
 import { createBrowserHistory } from "history";
-// import ActorsCurrentPage from "../basic/currentMovie/showActorsCurrentPage/actorsCurrentPage";
-import ShowTrailer from "../basic/currentMovie/trailer/showTrailer";
-import Actors from "../basic/currentMovie/Actors/Actors";
+import ShowTrailer from "../CurrentPages/CurrentMovie/trailer/showTrailer";
+import CurrentMovie from "../pages/MoviePage/CurrentMovie";
+import CurrentSerial from "../pages/SerialPage/CurrentSerial";
+import SearchMovies from "../pages/SearchMovies/SearchMovies";
+import Home from "../MainPage/Content/Home/Home";
+import ActorPage from "../pages/ActorPage/ActorPage";
+import Actors from "../CurrentPages/CurrentMovie/Actors/Actors";
 
 function Routes() {
   const customHistory = createBrowserHistory();
@@ -63,6 +63,11 @@ function Routes() {
             <CurrentMovie>
               <ShowInfoCurrentPage />
             </CurrentMovie>
+          </Layout>
+        </Route>
+        <Route exact path="/kinoland/person/:personId">
+          <Layout>
+            <ActorPage />
           </Layout>
         </Route>
         <Route exact path="/kinoland/movies/:movieId/videos">

@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
-import { getAiringToday } from "./../../../../store/data/dataOfSerial";
 import { getConfiguration } from "../../../../store/data/dataConfg";
-import { getUpComingMovies } from "./../../../../store/data/dataOfMovie";
+import { getUpComingMovies } from "../../../../store/data/dataOfMovie";
+import { getAiringToday } from "../../../../store/data/dataOfSerial";
 
+import { LoaderSpinner } from "../../../basic/Loader/LoaderSpinner";
 import Item from "../../../basic/movieCard/Item";
 
 import style from "./Home.module.css";
-import { LoaderSpinner } from "../../../basic/Loader/LoaderSpinner";
 
 function Home() {
   const [upComing, setUpComing] = useState([]);

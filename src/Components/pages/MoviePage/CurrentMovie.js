@@ -1,18 +1,19 @@
 import { useEffect, useState } from "react";
+
 import { useParams } from "react-router-dom";
 
+import { getConfiguration } from "../../../store/data/dataConfg";
 import {
   getCurrentMovie,
   getSimilarMovie,
-} from "../../../../../store/data/dataOfMovie";
-import { getConfiguration } from "../../../../../store/data/dataConfg";
+} from "../../../store/data/dataOfMovie";
 
-import HeaderOfCurrentPage from "../../../../basic/currentMovie/headerCurrentPage/headerOfCurrentPage";
-import BtnCurrentPage from "../../../../basic/currentMovie/btnCurrentPage/btnCurrentPage";
-import SimilarItems from "../../../../basic/currentMovie/similarItems/similarItems";
+import { LoaderSpinner } from "../../basic/Loader/LoaderSpinner";
+import BtnCurrentPage from "../../CurrentPages/CurrentMovie/btnCurrentPage/btnCurrentPage";
+import HeaderOfCurrentPage from "../../CurrentPages/CurrentMovie/headerCurrentPage/headerOfCurrentPage";
+import SimilarItems from "../../CurrentPages/CurrentMovie/similarItems/similarItems";
 
 import style from "./CurrentMovie.module.css";
-import { LoaderSpinner } from "../../../../basic/Loader/LoaderSpinner";
 
 function CurrentMovie(props) {
   const [data, setData] = useState([]);

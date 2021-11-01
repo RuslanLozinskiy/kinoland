@@ -1,4 +1,4 @@
-import Item from "../../movieCard/Item";
+import Item from "../../../basic/movieCard/Item";
 
 import style from "./similarItems.module.css";
 

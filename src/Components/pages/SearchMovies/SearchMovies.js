@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-import { foundMovie } from "./../../../../store/data/dataOfMovie";
-import { foundSerials } from "../../../../store/data/dataOfSerial";
-import { getConfiguration } from "../../../../store/data/dataConfg";
+import { getConfiguration } from "../../../store/data/dataConfg";
+import { foundMovie } from "../../../store/data/dataOfMovie";
+import { foundSerials } from "../../../store/data/dataOfSerial";
 
-import Item from "../../../basic/movieCard/Item";
-import { LoaderSpinner } from "../../../basic/Loader/LoaderSpinner";
+import { LoaderSpinner } from "../../basic/Loader/LoaderSpinner";
+import Item from "../../basic/movieCard/Item";
 
 import style from "./SearchMovies.module.css";
 

@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import { getConfiguration } from "../../../store/data/dataConfg";
 import {
   getCurrentSerial,
   getSimilarSerial,
-} from "../../../../../store/data/dataOfSerial";
-import { getConfiguration } from "../../../../../store/data/dataConfg";
+} from "../../../store/data/dataOfSerial";
 
-import BtnCurrentPage from "../../../../basic/currentMovie/btnCurrentPage/btnCurrentPage";
-import HeaderOfCurrentPage from "../../../../basic/currentMovie/headerCurrentPage/headerOfCurrentPage";
-import SimilarItems from "../../../../basic/currentMovie/similarItems/similarItems";
-import { LoaderSpinner } from "../../../../basic/Loader/LoaderSpinner";
+import HeaderOfCurrentPage from "../../CurrentPages/CurrentMovie/headerCurrentPage/headerOfCurrentPage";
+import BtnCurrentPage from "../../CurrentPages/CurrentMovie/btnCurrentPage/btnCurrentPage";
+import SimilarItems from "../../CurrentPages/CurrentMovie/similarItems/similarItems";
+import { LoaderSpinner } from "../../basic/Loader/LoaderSpinner";
 
 import style from "./CurrentSerial.module.css";
 
