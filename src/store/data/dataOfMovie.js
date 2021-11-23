@@ -30,16 +30,36 @@ export const getTopRatedMovies = async () => {
     console.error("something wrong");
   }
 };
-export const getMovies = async () => {
+// export const getMoviesWithGenres = async (params) => {
+//   try {
+//     const data = await axios.get(
+//       `https://api.themoviedb.org/3/discover/movie?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=ru-RU&page=${params.pageId}&primary_release_year=${params.yearId}&sort_by=popularity.desc&with_genres=${params.genreId}`
+//     );
+//     return data.data;
+//   } catch (err) {
+//     console.error("something wrong");
+//   }
+// };
+export const getMoviesWithYear = async (params) => {
   try {
     const data = await axios.get(
-      "https://api.themoviedb.org/3/movie/popular?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=ru-RU"
+      `https://api.themoviedb.org/3/discover/movie?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=ru-RU&page=${params.pageId}&primary_release_year=${params.yearId}&sort_by=popularity.desc&with_genres=${params.genreId}`
     );
-    return data.data.results;
+    return data.data;
   } catch (err) {
     console.error("something wrong");
   }
 };
+// export const getMoviesAll = async (params) => {
+//   try {
+//     const data = await axios.get(
+//       `https://api.themoviedb.org/3/discover/movie?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=ru-RU&page=${params.pageId}&primary_release_year=&sort_by=popularity.desc`
+//     );
+//     return data.data;
+//   } catch (err) {
+//     console.error("something wrong");
+//   }
+// };
 export const getCurrentMovie = async (params) => {
   try {
     const data = await axios.get(

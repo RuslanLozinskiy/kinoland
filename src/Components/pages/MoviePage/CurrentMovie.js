@@ -25,7 +25,6 @@ function CurrentMovie(props) {
     getConfiguration().then((res) => setImage(res));
     getSimilarMovie(params).then((res) => setSimilarItem(res));
   }, [params]);
-
   return data.length !== 0 && image.length !== 0 ? (
     <div className={style.currentPage}>
       <HeaderOfCurrentPage data={data} image={image} />

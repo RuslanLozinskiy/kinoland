@@ -1,45 +1,4 @@
-.dropdownMovies {
-  display: inline-block;
-}
-.headerButton {
-  color: #000;
-  font-size: 120%;
-  width: 100px;
-  text-decoration: none;
-  cursor: pointer;
-  height: 30px;
-  border: none;
-}
-
-.dropdownContent {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdownContent button {
-  display: block;
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-  height: 30px;
-  border: none;
-}
-
-.dropdownMovies:hover .dropdownContent {
-  display: block;
-}
-
-.dropdownButton {
-  text-align: center;
-  width: 100px;
-}
-
-.dropdownButton:hover {
-  background-color: #dcdcdc;
-}
 .headerButton:hover {
-  border-bottom: 2px solid #fc5a5a;
+  opacity: 0.6;
+  cursor: pointer;
 }

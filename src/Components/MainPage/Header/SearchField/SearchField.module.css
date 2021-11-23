@@ -1,35 +1,4 @@
-.searchHeader {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 100;
-}
-.searchHeader input {
-  height: 30px;
-  border: none;
-  font-size: 120%;
-}
-
-.searchHeader button {
-  height: 27px;
-  border: none;
-  background: #e8e8e8;
-  color: #8b8b8b;
-  text-decoration: none;
-}
-
-.searchHeader button:hover {
-  background-color: #dcdcdc;
-  border-bottom: 2px solid #fc5a5a;
+.searchField:hover {
   cursor: pointer;
-}
-.searchHeader input:focus {
-  border-bottom: 2px solid #fc5a5a;
-  outline: none;
-}
-.wrong::placeholder {
-  color: red;
-}
-.correct::placeholder {
-  color: #8b8b8b;
+  opacity: 0.6;
 }

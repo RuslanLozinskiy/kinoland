@@ -1,38 +1,17 @@
 import { useHistory } from "react-router-dom";
+import { ReactComponent as Movieicon } from "../../../../assets/general-icons/Movie.svg";
 
 import style from "./btnMovies.module.css";
 
 function BtnMovies() {
   const history = useHistory();
   return (
-    <div className={style.dropdownMovies}>
-      <button
-        className={style.headerButton}
-        onClick={() => {
-          history.push("/kinoland/movies");
-        }}
-      >
-        MOVIES
-      </button>
-      <div className={style.dropdownContent}>
-        <button
-          className={style.dropdownButton}
-          onClick={() => {
-            history.push("/kinoland/movies/nowplaying");
-          }}
-        >
-          NOW PLAYING
-        </button>
-        <button
-          className={style.dropdownButton}
-          onClick={() => {
-            history.push("/kinoland/movies/toprated");
-          }}
-        >
-          TOP RATED
-        </button>
-      </div>
-    </div>
+    <Movieicon
+      className={style.headerButton}
+      onClick={() => {
+        history.push("/kinoland/movies/page/1");
+      }}
+    />
   );
 }
 export default BtnMovies;

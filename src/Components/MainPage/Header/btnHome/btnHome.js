@@ -1,18 +1,15 @@
 import { useHistory } from "react-router-dom";
-
 import style from "./btnHome.module.css";
-
+import { ReactComponent as Homeicon } from "../../../../assets/general-icons/Home.svg";
 function BtnHome() {
   const history = useHistory();
   return (
-    <button
+    <Homeicon
       className={style.headerButton}
       onClick={() => {
         history.push("/kinoland/");
       }}
-    >
-      HOME
-    </button>
+    />
   );
 }
 export default BtnHome;

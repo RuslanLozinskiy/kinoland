@@ -18,7 +18,6 @@ function SearchMovies() {
   let [nameMovie, setNameMovies] = useState([]);
   let [nameSerial, setNameSerial] = useState([]);
   let [dataImage, setDataImage] = useState([]);
-
   useEffect(() => {
     setName(location.search.slice(3).toLocaleLowerCase());
   }, [location]);

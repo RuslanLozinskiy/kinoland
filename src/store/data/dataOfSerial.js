@@ -61,7 +61,16 @@ export const getLinkSerial = async (params) => {
     console.error("something wrong");
   }
 };
-
+export const getSerialsAll = async (params) => {
+  try {
+    const data = await axios.get(
+      `https://api.themoviedb.org/3/discover/tv?api_key=d55796f2ca4ecdb97ce23a56b9712c7f&language=ru-RU&page=${params.pageId}&primary_release_year=&sort_by=popularity.desc`
+    );
+    return data.data;
+  } catch (err) {
+    console.error("something wrong");
+  }
+};
 export const getSimilarSerial = async (params) => {
   try {
     const data = await axios.get(

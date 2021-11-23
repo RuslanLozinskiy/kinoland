@@ -1,12 +1,13 @@
 .moviesImage img {
   display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
+  width: 292px;
+  height: 410px;
 }
 
 .moviesImage {
-  display: block;
-  width: 100%;
-  height: 75%;
+  width: 292px;
+  height: 410px;
+}
+.moviesImage:hover {
+  opacity: 0.5;
 }

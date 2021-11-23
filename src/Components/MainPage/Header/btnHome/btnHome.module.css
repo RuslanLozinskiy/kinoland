@@ -1,12 +1,4 @@
-.headerButton {
-  color: #000;
-  font-size: 120%;
-  width: 100px;
-  text-decoration: none;
-  cursor: pointer;
-  height: 30px;
-  border: none;
-}
 .headerButton:hover {
-  border-bottom: 2px solid #fc5a5a;
+  opacity: 0.6;
+  cursor: pointer;
 }

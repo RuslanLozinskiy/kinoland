@@ -1,0 +1,48 @@
+.d1 {
+  background: white;
+  margin-left: 5%;
+  width: 50%;
+  /* margin-top: 3%; */
+  margin: 3% 0 0 25%;
+  
+}
+.searchHeader {
+display: flex;
+}
+.d1 input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  /* border: 2px solid #7ba7ab; */
+  /* border-radius: 5px; */
+  outline: none;
+  background: white;
+  color: black;
+  font-size: 130%;
+  border: none;
+}
+.d1 button {
+  /* position: absolute; */
+  /* top: 6.6%; */
+  /* right: 0px; */
+  text-align: center;
+  width: 70px;
+  height: 42px;
+  border: none;
+  background: #9E9C9C;
+  /* border-radius: 0 5px 5px 0; */
+  cursor: pointer;
+  
+}
+.d1 button:before {
+  content: "\f002";
+  /* font-family: FontAwesome; */
+  /* font-size: 16px; */
+  color: #9E9C9C;
+}
+.wrong::placeholder {
+  color: red;
+}
+.correct::placeholder {
+  color: black;
+}

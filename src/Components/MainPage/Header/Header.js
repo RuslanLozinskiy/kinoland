@@ -8,10 +8,10 @@ import style from "./Header.module.css";
 function Header(props) {
   return (
     <header className={style.header}>
-      <SearchField />
       <BtnHome />
       <BtnMovies />
       <BtnSerials />
+      <SearchField />
     </header>
   );
 }

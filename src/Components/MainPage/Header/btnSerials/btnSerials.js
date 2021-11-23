@@ -1,38 +1,17 @@
 import { useHistory } from "react-router-dom";
+import { ReactComponent as TVicon } from "../../../../assets/general-icons/TV.svg";
 
 import style from "./btnSerials.module.css";
 
 function BtnSerials() {
   const history = useHistory();
   return (
-    <div className={style.dropdownMovies}>
-      <button
-        className={style.headerButton}
-        onClick={() => {
-          history.push("/kinoland/serials");
-        }}
-      >
-        TV
-      </button>
-      <div className={style.dropdownContent}>
-        <button
-          className={style.dropdownButton}
-          onClick={() => {
-            history.push("/kinoland/serials/ontheair");
-          }}
-        >
-          NOW PLAYING
-        </button>
-        <button
-          className={style.dropdownButton}
-          onClick={() => {
-            history.push("/kinoland/serials/toprated");
-          }}
-        >
-          TOP RATED
-        </button>
-      </div>
-    </div>
+    <TVicon
+      className={style.headerButton}
+      onClick={() => {
+        history.push("/kinoland/serials/page/1");
+      }}
+    />
   );
 }
 export default BtnSerials;

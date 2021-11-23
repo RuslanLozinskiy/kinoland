@@ -1,22 +1,17 @@
 import { Route, Router, Switch } from "react-router-dom";
 
 import Layout from "./Layout";
-import Movies from "../MainPage/Content/Movies/Movies";
-import NowPlaying from "../MainPage/Content/Movies/NowPlaying/NowPlaying";
-import OnTheAir from "../MainPage/Content/TV_serials/OnTheAir/OnTheAir";
-import Serials from "../MainPage/Content/TV_serials/Serials";
 import ShowInfoCurrentPage from "../CurrentPages/CurrentMovie/infoCurrentMovie/showInfoCurrentPage";
-import TopRated from "../MainPage/Content/Movies/TopRated/TopRated";
-import TopRatedSerials from "../MainPage/Content/TV_serials/TopRated/TopRatedSerials";
 import { createBrowserHistory } from "history";
 import ShowTrailer from "../CurrentPages/CurrentMovie/trailer/showTrailer";
 import CurrentMovie from "../pages/MoviePage/CurrentMovie";
 import CurrentSerial from "../pages/SerialPage/CurrentSerial";
 import SearchMovies from "../pages/SearchMovies/SearchMovies";
-import Home from "../MainPage/Content/Home/Home";
 import ActorPage from "../pages/ActorPage/ActorPage";
 import Actors from "../CurrentPages/CurrentMovie/Actors/Actors";
-
+import SearchInput from "../pages/SearchMovies/searchInput";
+import Movies from "../pages/Movies/Movies";
+import Home from "../pages/Home/Home";
 function Routes() {
   const customHistory = createBrowserHistory();
 
@@ -25,37 +20,65 @@ function Routes() {
       <Switch>
         <Route exact path="/kinoland/serials">
           <Layout>
-            <Serials />
-          </Layout>
-        </Route>
-        <Route exact path="/kinoland/serials/ontheair">
-          <Layout>
-            <OnTheAir />
-          </Layout>
-        </Route>
-        <Route exact path="/kinoland/serials/toprated">
-          <Layout>
-            <TopRatedSerials />
+            <Movies/>
           </Layout>
         </Route>
         <Route exact path="/kinoland/">
           <Layout>
-            <Home />
+            <Home/>
           </Layout>
         </Route>
-        <Route exact path="/kinoland/movies/nowplaying">
-          <Layout>
-            <NowPlaying />
-          </Layout>
-        </Route>
-        <Route exact path="/kinoland/movies">
+        <Route exact path="/kinoland/serials/page/:pageId">
           <Layout>
             <Movies />
           </Layout>
         </Route>
-        <Route exact path="/kinoland/movies/toprated">
+        <Route exact path="/kinoland/serials/genre/:genreId/page/:pageId">
           <Layout>
-            <TopRated />
+            <Movies />
+          </Layout>
+        </Route>
+        <Route
+          exact
+          path="/kinoland/serials/genre/:genreId/year/:yearId/page/:pageId"
+        >
+          <Layout>
+            <Movies />
+          </Layout>
+        </Route>
+        <Route
+          exact
+          path="/kinoland/serials/genre/:genreId/year/:yearId/sort/:sortId/page/:pageId"
+        >
+          <Layout>
+            <Movies />
+          </Layout>
+        </Route>
+
+        <Route exact path="/kinoland/movies/page/:pageId">
+          <Layout>
+            <Movies></Movies>
+          </Layout>
+        </Route>
+        <Route exact path="/kinoland/movies/genre/:genreId/page/:pageId">
+          <Layout>
+            <Movies></Movies>
+          </Layout>
+        </Route>
+        <Route
+          exact
+          path="/kinoland/movies/genre/:genreId/year/:yearId/page/:pageId"
+        >
+          <Layout>
+            <Movies></Movies>
+          </Layout>
+        </Route>
+        <Route
+          exact
+          path="/kinoland/movies/genre/:genreId/year/:yearId/sort/:sortId/page/:pageId"
+        >
+          <Layout>
+            <Movies></Movies>
           </Layout>
         </Route>
         <Route exact path="/kinoland/movies/:movieId/details">
@@ -107,6 +130,12 @@ function Routes() {
         </Route>
         <Route exact path="/kinoland/search">
           <Layout>
+            <SearchInput />
+          </Layout>
+        </Route>
+        <Route exact path="/kinoland/search/query">
+          <Layout>
+            <SearchInput />
             <SearchMovies />
           </Layout>
         </Route>
