@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-
-import { getConfiguration } from "../../../store/data/dataConfg";
-import { foundMovie } from "../../../store/data/dataOfMovie";
-import { foundSerials } from "../../../store/data/dataOfSerial";
+import { getConfiguration } from "../../../services/Api/ConfigurationApi";
+import { foundMovie } from "../../../services/Api/MoviesApi";
+import { foundSerials } from "../../../services/Api/SerialsApi";
 
 import { LoaderSpinner } from "../../basic/Loader/LoaderSpinner";
 import Item from "../../basic/movieCard/Item";

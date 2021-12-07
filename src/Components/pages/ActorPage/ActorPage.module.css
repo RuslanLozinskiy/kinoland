@@ -4,9 +4,10 @@
 
 }
 .actorPage {
-    margin: 5% 20% 0% 20%;
+    margin: 5% 10% 0% 10%;
 }
 .creditItems {
-    display: flex;
-    flex-wrap: wrap;
+   /* margin-left: 20%; */
+   display: flex;
+   justify-content: center;
 }

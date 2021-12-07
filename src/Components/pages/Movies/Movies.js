@@ -5,14 +5,15 @@ import Filter from "../../MainPage/filter/Filter";
 import Item from "../../basic/movieCard/Item";
 import { LoaderSpinner } from "../../basic/Loader/LoaderSpinner";
 import { useState, useEffect } from "react";
+
+import { getSerialsWithGenres } from "../../../services/Api/SerialsApi";
+import { getMoviesWithGenres } from "../../../services/Api/MoviesApi";
+import Pagination from "../../basic/Pagination/Pagination";
 import {
   getConfiguration,
   getListGenres,
   getListGenresSerials,
-} from "../../../store/data/dataConfg";
-import { getSerialsWithGenres } from "../../../services/Api/SerialsApi";
-import { getMoviesWithGenres } from "../../../services/Api/MoviesApi";
-import Pagination from "../../basic/Pagination/Pagination";
+} from "../../../services/Api/ConfigurationApi";
 function Movies(props) {
   const [list, setList] = useState([]);
   const [countPage, setCountPage] = useState([]);

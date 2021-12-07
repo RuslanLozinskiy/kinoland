@@ -1,18 +1,18 @@
 .boxSlider {
-  width: 90%;
+  width: 80%;
   /* display: flex; */
   /* flex-direction: column;
     justify-content: center;
     margin: 0 auto; */
-  margin-left: 10%;
-  margin-top: 3%;
+    height: 95vh;
+
   
 }
 .bigSliderItems {
   /* margin-left: 6%; */
   /* display: flex; */
   /* padding-left: 2%; */
-  width: 90%;
+  /* width: 90%; */
   cursor: pointer;
 }
 .boxSlider ul > li > button::before {

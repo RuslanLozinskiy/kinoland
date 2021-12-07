@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 
 import { useParams } from "react-router-dom";
-
-import { getCurrentMovie } from "../../../../store/data/dataOfMovie";
-import { getCurrentSerial } from "../../../../store/data/dataOfSerial";
+import { getCurrentMovie } from "../../../../services/Api/MoviesApi";
+import { getCurrentSerial } from "../../../../services/Api/SerialsApi";
 
 import style from "./showInfoCurrentPage.module.css";
 

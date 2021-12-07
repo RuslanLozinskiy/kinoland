@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 
 import { useParams } from "react-router";
-import { getConfiguration } from "../../../store/data/dataConfg";
-import { getActor, getActorCredits } from "../../../store/data/dataOfActor";
 
 import AboutActor from "../../CurrentPages/CurrentActor/aboutActor/AboutActor";
 import BiographyActor from "../../CurrentPages/CurrentActor/biographyActor/BiographyActor";
 import ImageActor from "../../CurrentPages/CurrentActor/imageActor.js/ImageActor";
-import Item from "../../basic/movieCard/Item";
 
 import style from "./ActorPage.module.css";
+import { getActor, getActorCredits } from "../../../services/Api/ActorsApi";
+import { getConfiguration } from "../../../services/Api/ConfigurationApi";
+import SmallSlider from "../../basic/smallSlider/SmallSlider";
 
 function ActorPage(props) {
   const [actor, setActor] = useState([]);
@@ -33,7 +33,7 @@ function ActorPage(props) {
       <BiographyActor data={actor} />
       <h2>участвовал(-a) в таких проектах: </h2>
       <div className={style.creditItems}>
-        <Item item={actorCredits} image={confg} />
+        <SmallSlider data={actorCredits} image={confg} />
       </div>
     </div>
   ) : null;

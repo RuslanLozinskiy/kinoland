@@ -1,18 +1,17 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import { getConfiguration } from "../../../store/data/dataConfg";
-import {
-  getCurrentSerial,
-  getSimilarSerial,
-} from "../../../store/data/dataOfSerial";
-
 import HeaderOfCurrentPage from "../../CurrentPages/CurrentMovie/headerCurrentPage/headerOfCurrentPage";
 import BtnCurrentPage from "../../CurrentPages/CurrentMovie/btnCurrentPage/btnCurrentPage";
-import SimilarItems from "../../CurrentPages/CurrentMovie/similarItems/similarItems";
 import { LoaderSpinner } from "../../basic/Loader/LoaderSpinner";
 
 import style from "./CurrentSerial.module.css";
+import SmallSlider from "../../basic/smallSlider/SmallSlider";
+import {
+  getCurrentSerial,
+  getSimilarSerial,
+} from "../../../services/Api/SerialsApi";
+import { getConfiguration } from "../../../services/Api/ConfigurationApi";
 
 function CurrentSerial(props) {
   const [data, setData] = useState([]);
@@ -31,7 +30,10 @@ function CurrentSerial(props) {
         <BtnCurrentPage details={data} />
         {props.children}
       </div>
-      <SimilarItems similarItems={similarItem} image={image} />
+      <div className={style.similarItems}>
+        <p>Похожие</p>
+        <SmallSlider data={similarItem} image={image} />
+      </div>
     </div>
   ) : (
     <LoaderSpinner />

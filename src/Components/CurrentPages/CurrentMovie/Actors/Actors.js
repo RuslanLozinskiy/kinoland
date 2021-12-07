@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 
-import { getActorsMovie } from "../../../../store/data/dataOfMovie";
-import { getActorsSerial } from "../../../../store/data/dataOfSerial";
-import { getConfiguration } from "../../../../store/data/dataConfg";
-
 import ItemActors from "./itemActors/ItemsActors";
 
 import style from "./Actors.module.css";
+import {
+  getActorsMovie,
+  getActorsSerial,
+} from "../../../../services/Api/ActorsApi";
+import { getConfiguration } from "../../../../services/Api/ConfigurationApi";
 
 function Actors(props) {
   const params = useParams();

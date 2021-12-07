@@ -15,10 +15,7 @@ function BigSliders(props) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // arrows: true,
     className: style.bigSliderItems,
-    // nextArrow: style.next,
-    // prevArrow: <SamplePrevArrow />,
   };
   return (
     <div className={style.boxSlider}>
