@@ -18,4 +18,15 @@
   border: none;
   cursor: pointer;
 } */
-
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 95vh;
+    background-color: #3d3c3c;
+    height: 6%;
+    opacity: 0.9;
+    align-items: center;
+  }
+}
