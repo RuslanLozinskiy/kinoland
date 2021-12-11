@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kinoland/static/css/main.10e9640a.chunk.css",
+    "main.css": "/kinoland/static/css/main.5bb4bdb8.chunk.css",
     "main.js": "/kinoland/static/js/main.a9895fa9.chunk.js",
     "main.js.map": "/kinoland/static/js/main.a9895fa9.chunk.js.map",
     "runtime-main.js": "/kinoland/static/js/runtime-main.d3b3acaa.js",
@@ -10,7 +10,7 @@
     "static/js/2.2bf9feb6.chunk.js.map": "/kinoland/static/js/2.2bf9feb6.chunk.js.map",
     "index.html": "/kinoland/index.html",
     "static/css/2.76856933.chunk.css.map": "/kinoland/static/css/2.76856933.chunk.css.map",
-    "static/css/main.10e9640a.chunk.css.map": "/kinoland/static/css/main.10e9640a.chunk.css.map",
+    "static/css/main.5bb4bdb8.chunk.css.map": "/kinoland/static/css/main.5bb4bdb8.chunk.css.map",
     "static/js/2.2bf9feb6.chunk.js.LICENSE.txt": "/kinoland/static/js/2.2bf9feb6.chunk.js.LICENSE.txt",
     "static/media/Chevron-Left.cb48c7aa.svg": "/kinoland/static/media/Chevron-Left.cb48c7aa.svg",
     "static/media/Chevron-Right.a16a0a21.svg": "/kinoland/static/media/Chevron-Right.a16a0a21.svg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.d3b3acaa.js",
     "static/css/2.76856933.chunk.css",
     "static/js/2.2bf9feb6.chunk.js",
-    "static/css/main.10e9640a.chunk.css",
+    "static/css/main.5bb4bdb8.chunk.css",
     "static/js/main.a9895fa9.chunk.js"
   ]
 }
