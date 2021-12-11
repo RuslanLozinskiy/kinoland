@@ -23,7 +23,8 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    top: 95vh;
+    bottom: 0;
+    top: auto;
     background-color: #3d3c3c;
     height: 6%;
     opacity: 0.9;
