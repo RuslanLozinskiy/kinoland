@@ -15,3 +15,12 @@
 p {
   color: white;
 }
+@media only screen and (max-width: 768px) {
+  .listItems {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+
+    
+  }
+}

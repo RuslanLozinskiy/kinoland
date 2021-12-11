@@ -16,6 +16,31 @@ function BigSliders(props) {
     slidesToShow: 1,
     slidesToScroll: 1,
     className: style.bigSliderItems,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          arrows: false,
+          infinite: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          dots: false,
+          infinite: false,
+          arrows: false,
+        },
+      },
+    ],
   };
   return (
     <div className={style.boxSlider}>

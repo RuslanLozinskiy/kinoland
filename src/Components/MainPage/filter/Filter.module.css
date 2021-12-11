@@ -6,13 +6,12 @@
   margin-left: 6%;
   color: white;
   margin-top: 2%;
-  width: 65%;
+  width: 100%;
   /* height: 20px; */
 }
 .filterForm {
   display: flex;
-  justify-content: space-between;
-  /* flex-direction: column; */
+ 
   flex-wrap: wrap;
 }
 .filter select {
@@ -21,4 +20,21 @@ color: white;
 }
 .filter option {
   color: white;
+}
+@media only screen and (max-width: 768px) {
+  .filterForm {
+    display: flex;
+    flex-direction: column;
+   /* align-items: center;
+    */
+    margin-left: 0%;
+width: 90%;
+   /* align-self: center; */
+  }
+  .filterForm button {
+    margin-top: 2%;
+  }
+  .filterForm span {
+    padding-top: 1%;
+  }
 }
