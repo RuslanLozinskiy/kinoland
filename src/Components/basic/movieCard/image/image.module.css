@@ -11,3 +11,7 @@
 .moviesImage:hover {
   opacity: 0.5;
 }
+.imageNotFound {
+  padding-left: 23%;
+  padding-top: 10%;
+}

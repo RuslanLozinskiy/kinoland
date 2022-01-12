@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "./SmallSlider.module.css";
 import LazyLoad from "react-lazyload";
+import imgNotFound from "../../../assets/image-not-found.svg";
 
 import { useHistory } from "react-router-dom";
 function SmallSlider(props) {
@@ -70,17 +71,25 @@ function SmallSlider(props) {
               }}
             >
               <LazyLoad className={style.moviesImage} height={200}>
-                <img
-                  src={
-                    image.base_url + image.poster_sizes[3] + item.poster_path
-                  }
-                  title={
-                    item.hasOwnProperty("original_title")
-                      ? item.title
-                      : item.name
-                  }
-                  alt=""
-                />
+                {item.poster_path !== null ? (
+                  <img
+                    src={
+                      image.base_url + image.poster_sizes[3] + item.poster_path
+                    }
+                    title={
+                      item.hasOwnProperty("original_title")
+                        ? item.title
+                        : item.name
+                    }
+                    alt=""
+                  />
+                ) : (
+                  <img
+                    src={imgNotFound}
+                    alt=""
+                    className={style.imageNotFound}
+                  />
+                )}
               </LazyLoad>
             </div>
           );

@@ -31,8 +31,12 @@
   color: white;
 }
 .slider {
-    /* display: flex;
+  /* display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start; */
+}
+.imageNotFound {
+  padding-left: 23%;
+  padding-top: 10%;
 }
