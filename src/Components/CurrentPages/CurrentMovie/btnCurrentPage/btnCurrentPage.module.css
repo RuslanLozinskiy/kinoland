@@ -26,3 +26,15 @@
 .buttonCurrentPage:focus {
   border-bottom: 2px solid #fc5a5a;
 }
+@media only screen and (max-width: 768px) {
+  .btnCurrentPage {
+ width: 100%;
+    border-bottom: none;
+    display: flex;
+  }
+  .buttonCurrentPage {
+width: 100%;
+color: #fc5a5a;
+
+  }
+}
