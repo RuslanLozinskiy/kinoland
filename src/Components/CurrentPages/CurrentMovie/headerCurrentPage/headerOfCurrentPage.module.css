@@ -8,3 +8,12 @@
   color: whitesmoke;
   height: 80%;
 }
+@media only screen and (max-width: 768px) {
+  .headerCurrentPage  {
+  left: 0;
+  top: 0;
+    
+   margin: 0;
+   /* width: 20%; */
+  }
+}

@@ -1,4 +1,4 @@
-.moviesImage img {
+.imgPoster {
   display: block;
   width: 292px;
   height: 410px;
@@ -12,6 +12,9 @@
   opacity: 0.5;
 }
 .imageNotFound {
-  padding-left: 23%;
-  padding-top: 10%;
+  padding-left: 5%;
+  padding-top: 35%;
+
+  width: 200px;
+  height: 200px;
 }
