@@ -16,3 +16,8 @@
     margin: 0;
   }
 }
+@media only screen and (max-width: 768px) {
+  .actorPage {
+    margin-bottom: 20%;
+  }
+}

@@ -2,19 +2,15 @@
   background: white;
   margin-left: 5%;
   width: 50%;
-  /* margin-top: 3%; */
   margin: 3% 0 0 25%;
-  
 }
 .searchHeader {
-display: flex;
+  display: flex;
 }
 .d1 input {
   width: 100%;
   height: 42px;
   padding-left: 10px;
-  /* border: 2px solid #7ba7ab; */
-  /* border-radius: 5px; */
   outline: none;
   background: white;
   color: black;
@@ -22,23 +18,17 @@ display: flex;
   border: none;
 }
 .d1 button {
-  /* position: absolute; */
-  /* top: 6.6%; */
-  /* right: 0px; */
   text-align: center;
   width: 70px;
   height: 42px;
   border: none;
-  background: #9E9C9C;
-  /* border-radius: 0 5px 5px 0; */
+  background: #9e9c9c;
   cursor: pointer;
-  
 }
 .d1 button:before {
   content: "\f002";
-  /* font-family: FontAwesome; */
-  /* font-size: 16px; */
-  color: #9E9C9C;
+
+  color: #9e9c9c;
 }
 .wrong::placeholder {
   color: red;
@@ -48,9 +38,8 @@ display: flex;
 }
 @media only screen and (max-width: 768px) {
   .d1 {
-   width: 100%;
-   left: 0;
-   margin: 0;
-   
+    width: 100%;
+    left: 0;
+    margin: 0;
   }
 }

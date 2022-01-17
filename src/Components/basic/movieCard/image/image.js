@@ -7,7 +7,8 @@ function Image(props) {
   return (
     <LazyLoad className={style.moviesImage} height={200}>
       {item.poster_path !== null ? (
-        <img className={style.imgPoster}
+        <img
+          className={style.imgPoster}
           src={image.base_url + image.poster_sizes[3] + item.poster_path}
           title={item.hasOwnProperty("original_title") ? item.title : item.name}
           alt=""

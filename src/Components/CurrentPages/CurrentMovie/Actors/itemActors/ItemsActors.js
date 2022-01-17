@@ -6,7 +6,6 @@ import style from "./itemActors.module.css";
 
 function ItemActors(props) {
   const { data, confg } = props;
-  console.log(data);
   const history = useHistory();
   return data.map((item, index) => {
     return item.profile_path === null ? null : (

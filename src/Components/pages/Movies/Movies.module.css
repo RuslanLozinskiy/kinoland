@@ -1,6 +1,4 @@
 .listItems {
-  /* display: -webkit-flex; */
-
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -8,10 +6,7 @@
   margin-left: 5%;
   margin-right: 5%;
 }
-.moviesPage {
-  /* display: flex; */
-  /* margin-top: 2%; */
-}
+
 p {
   color: white;
 }
@@ -20,7 +15,5 @@ p {
     display: flex;
     justify-content: center;
     margin-left: 10%;
-
-    
   }
 }

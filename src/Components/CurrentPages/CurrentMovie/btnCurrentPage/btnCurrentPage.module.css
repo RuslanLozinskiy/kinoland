@@ -5,8 +5,7 @@
 
 .buttonCurrentPage {
   color: white;
-  background: #1D1D1D;
-
+  background: #1d1d1d;
   font-size: 100%;
   width: 15%;
   text-decoration: none;
@@ -28,13 +27,12 @@
 }
 @media only screen and (max-width: 768px) {
   .btnCurrentPage {
- width: 100%;
+    width: 100%;
     border-bottom: none;
     display: flex;
   }
   .buttonCurrentPage {
-width: 100%;
-color: #fc5a5a;
-
+    width: 100%;
+    color: #fc5a5a;
   }
 }

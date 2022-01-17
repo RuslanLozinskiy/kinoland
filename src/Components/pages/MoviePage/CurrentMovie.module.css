@@ -1,5 +1,3 @@
-.containerInfoCurrentPage {
-}
 .currentPage {
   line-height: 1.4;
   text-align: center;
@@ -7,10 +5,8 @@
 
 .similarItems {
   margin-top: 3%;
-
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 @media only screen and (max-width: 768px) {

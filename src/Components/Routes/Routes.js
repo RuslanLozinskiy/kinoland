@@ -20,12 +20,12 @@ function Routes() {
       <Switch>
         <Route exact path="/kinoland/serials">
           <Layout>
-            <Movies/>
+            <Movies />
           </Layout>
         </Route>
         <Route exact path="/kinoland/">
           <Layout>
-            <Home/>
+            <Home />
           </Layout>
         </Route>
         <Route exact path="/kinoland/serials/page/:pageId">

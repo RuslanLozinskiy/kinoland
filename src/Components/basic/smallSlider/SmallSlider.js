@@ -73,7 +73,7 @@ function SmallSlider(props) {
               <LazyLoad className={style.moviesImage} height={200}>
                 {item.poster_path !== null ? (
                   <img
-                  className={style.imgPoster}
+                    className={style.imgPoster}
                     src={
                       image.base_url + image.poster_sizes[3] + item.poster_path
                     }

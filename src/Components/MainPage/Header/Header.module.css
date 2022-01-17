@@ -1,6 +1,4 @@
 .header {
-  /* display: -webkit-flex;
-  display: flex; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -10,14 +8,9 @@
   left: 0;
   width: 5%;
   height: 30%;
-  /* background-color: #1D1D1D; */
   z-index: 1;
 }
-/* .header button {
-  height: 30px;
-  border: none;
-  cursor: pointer;
-} */
+
 @media only screen and (max-width: 768px) {
   .header {
     width: 100%;

@@ -1,4 +1,3 @@
-import style from "./Genres.module.css";
 function Genres(props) {
   const { genres } = props;
   return genres.map((item, index) => {

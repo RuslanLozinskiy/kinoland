@@ -1,5 +1,3 @@
-.containerInfoCurrentPage {
-}
 .currentPage {
   line-height: 1.4;
   text-align: center;
@@ -9,4 +7,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .currentPage {
+    margin-bottom: 20%;
+  }
 }
