@@ -13,7 +13,6 @@
 @media only screen and (max-width: 768px) {
   .movies {
     justify-content: center;
-
-    margin: none;
+    margin-bottom: 20%;
   }
 }
