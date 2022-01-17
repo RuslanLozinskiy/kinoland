@@ -1,12 +1,12 @@
 import { useHistory } from "react-router";
 
 import ImgActor from "./imgActor/ImgActor.js";
-import InfoActor from "./infoActor/InfoActor";
 
 import style from "./itemActors.module.css";
 
 function ItemActors(props) {
   const { data, confg } = props;
+  console.log(data);
   const history = useHistory();
   return data.map((item, index) => {
     return item.profile_path === null ? null : (
@@ -17,8 +17,9 @@ function ItemActors(props) {
           history.push(`/kinoland/person/${item.id}`);
         }}
       >
-        <ImgActor data={item} confg={confg} />
-        <InfoActor data={item} />
+        <ImgActor data={item} confg={confg}>
+          <h4>{item.name}</h4>
+        </ImgActor>
       </div>
     );
   });

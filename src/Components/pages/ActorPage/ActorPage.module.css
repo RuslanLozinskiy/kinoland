@@ -1,13 +1,18 @@
 .infoActor {
-    display: flex;
-    /* margin: 5% 0% 0% 20%; */
-
+  display: flex;
 }
 .actorPage {
-    margin: 5% 10% 0% 10%;
+  margin: 5% 10% 0% 10%;
 }
 .creditItems {
-   /* margin-left: 20%; */
-   display: flex;
-   justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .infoActor {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
 }

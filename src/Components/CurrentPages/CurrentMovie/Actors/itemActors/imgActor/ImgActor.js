@@ -7,9 +7,10 @@ function ImgActor(props) {
   return (
     <LazyLoad className={style.ActorImg} height={200}>
       <img
-        src={confg.base_url + confg.poster_sizes[3] + data.profile_path}
+        src={confg.base_url + confg.poster_sizes[2] + data.profile_path}
         alt=""
-      />
+      ></img>
+      {props.children}
     </LazyLoad>
   );
 }

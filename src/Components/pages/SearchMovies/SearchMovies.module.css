@@ -10,3 +10,10 @@
   font-size: 200%;
   text-align: center;
 }
+@media only screen and (max-width: 768px) {
+  .movies {
+    justify-content: center;
+    align-items: center;
+    margin: none;
+  }
+}

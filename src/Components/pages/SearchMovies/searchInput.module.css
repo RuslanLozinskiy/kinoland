@@ -46,3 +46,11 @@ display: flex;
 .correct::placeholder {
   color: black;
 }
+@media only screen and (max-width: 768px) {
+  .d1 {
+   width: 100%;
+   left: 0;
+   margin: 0;
+   
+  }
+}
