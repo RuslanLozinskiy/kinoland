@@ -1,5 +1,5 @@
 import Genres from "./Genres/Genres";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import style from "./Filter.module.css";
 import { useHistory, useLocation } from "react-router";
 import ReleaseYear from "./ReleaseYear/ReleaseYear";
@@ -12,6 +12,7 @@ function Filter(props) {
   const [selectedGenre, setSelectedGenre] = useState(null);
   const [selectedYear, setSelectedYear] = useState(null);
   const [selectedSortBy, setSelectedSortBy] = useState(null);
+
   const handleGenre = (e) => {
     setSelectedGenre(e.target.value);
   };

@@ -3,3 +3,9 @@
   max-width: 70px;
   margin-left: 2%;
 }
+@media only screen and (max-width: 768px) {
+  .progressbar {
+    min-width: 40px;
+    max-width: 40px;
+  }
+}
